@@ -30,9 +30,7 @@ twitter_username: mammothio
 github_username:  mammoth
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+theme: jekyll-theme-cayman-blog
 
 # Exclude from processing.
 # The following items will not be processed, by default.
