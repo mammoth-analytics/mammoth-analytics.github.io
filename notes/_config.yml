@@ -31,6 +31,11 @@ github_username:  mammoth
 
 # Build settings
 theme: jekyll-theme-cayman-blog
+# Add metadata
+github: [metadata]
+#add seo tags
+plugins:
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
