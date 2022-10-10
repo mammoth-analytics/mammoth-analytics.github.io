@@ -2,12 +2,9 @@
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$navbar-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$navbar-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 3rem;
   @extend %clearfix;
 
   @include media-query($on-laptop) {

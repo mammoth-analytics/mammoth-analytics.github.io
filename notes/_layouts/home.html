@@ -4,27 +4,34 @@ layout: default
 
 <div>
 
-  {{ content }}
+  <h2>Release notes</h2>
 
-  <h2>Latest Posts</h2>
-
-  <div>&nbsp;</div>
-
-  <ul class="post-list">
+  <ul class="post-list left-section">
     {% for post in site.posts %}
       <li>
 
         {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          <span class="post-meta">( {{ post.date | date: date_format }} )</span>
         </h2>
-
-        {{ post.excerpt | markdownify | truncatewords: 30 }}
 
       </li>
     {% endfor %}
   </ul>
-
+  <article class="right-section">
+    <div>
+      <h2 id="product-updates"></h2>
+    <h3 id="bug-fixes">
+      <strong>Bug fixes:</strong></h3>
+      <p>1.In/out icons were not looking right.</p>
+      <p>2.Link Pointer was showing up when alerts are disabled.</p>
+      <p>1.In/out icons were not looking right.</p>
+      <p>1.In/out icons were not looking right.</p>
+      <p>1.In/out icons were not looking right.</p>
+      <p>1.In/out icons were not looking right.</p>  
+  </article>
 </div>
+</div>
+
