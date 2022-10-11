@@ -41,7 +41,7 @@
     display: none;
   }
 
-  .page-link {
+  .link-url {
     color: $text-color;
     line-height: $base-line-height;
 
@@ -97,7 +97,7 @@
     .trigger {
       padding-top: 20px;
     }
-    .page-link {
+    .link-url {
       display: block;
       padding: 10px 10px;
 
@@ -164,4 +164,63 @@
   width: 70%;
   display: inline-block;
   float: right;
+  p {
+    padding-left: 30px;
+  }
+}
+#internal-improvements {
+  margin-top: 50px;
+}
+.mobileView {
+  display: none;
+}
+label {
+  display: block !important;
+}
+.accordion-flush .accordion-collapse {
+  max-height: 150px;
+  overflow: auto;
+}
+.accordion-item {
+  border: 1px solid #d8ece0 !important;
+}
+@media screen and (max-width: 54em) {
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .mobileView {
+    display: block;
+    .accordion-button {
+      background-color: #d8ece0;
+      &:focus {
+        border-color: transparent;
+        box-shadow: none;
+      }
+    }
+    .accordion-button:not(.collapsed) {
+      color: #212529;
+      background-color: #d8ece0;
+    }
+  }
+  .mobile-content.main-content {
+    h2 {
+      display: none;
+    }
+  }
+  #mobileContent {
+    .right-section {
+      display: none;
+    }
+    .left-section {
+      display: block;
+      width: 100%;
+    }
+    h2 {
+      color: #fff;
+      font-size: 0px;
+    }
+  }
 }

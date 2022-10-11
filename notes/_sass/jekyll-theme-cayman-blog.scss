@@ -55,11 +55,11 @@ body {
 
 a {
   color: $body-link-color;
-  text-decoration: none;
+  text-decoration: none !important;
 
   &:hover {
-    text-decoration: none;
-    color: #00866d;
+    text-decoration: none !important;
+    color: #00866d !important;
   }
 }
 
@@ -113,11 +113,11 @@ a {
   background-color: #f5f5f5;
 
   @include large {
-    padding: 3rem 6rem;
+    padding: 4rem 6rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
   }
 
   @include small {
