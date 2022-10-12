@@ -1,7 +1,7 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 @import "blog";
 
 @mixin large {
@@ -25,11 +25,15 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family:'Aeonik';
+  src: url('../../font/Aeonik-Regular.otf');
+}
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Aeonik !important;
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;

@@ -5,6 +5,10 @@
   max-width: 1400px;
   margin: auto;
   padding: 0 3rem;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 9;
   @extend %clearfix;
 
   @include media-query($on-laptop) {
