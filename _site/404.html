@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    
+    
+    <!-- Non social metatags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    
+    <title>Mammoth release note</title>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Place this data between the <head> tags of your website -->
+
+<meta name="description" content="Ah snap! We could not find what you are looking for!" />
+
+
+
+
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image" />
+
+
+
+<meta name="twitter:title" content="404 Error" />
+<meta name="twitter:description" content="Ah snap! We could not find what you are looking for!" />
+
+
+
+<!-- Twitter summary card with large image must be at least 280x150px -->
+
+<meta name="twitter:url" content="http://localhost:4000//404.html" />
+
+<!-- Open Graph data -->
+<meta property="og:title" content="404 Error" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:4000//404.html" />
+
+
+<meta property="og:description" content="Ah snap! We could not find what you are looking for!" />
+<meta property="og:site_name" content="Mammoth release notes" />
+
+
+<meta property="og:locale" content="" />
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <link rel="canonical" href="http://localhost:4000/404.html">
+    
+    
+    
+    <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxOSAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjgyMTcgMTAuMTgxMkMxMC4yNDgyIDEwLjE4MjEgOS42OTg0MyAxMC40MTIxIDkuMjkyODMgMTAuODIwOEM4Ljg4NzIzIDExLjIyOTUgOC42NTg4OSAxMS43ODM2IDguNjU3ODUgMTIuMzYxN1YxNC41NDM3SDcuMjE0NzRWMTIuMzYxN0M3LjIyMDI0IDEyLjA3MTcgNy4xNjgzMyAxMS43ODM1IDcuMDYyMDMgMTEuNTEzOUM2Ljk1NTc0IDExLjI0NDQgNi43OTcyIDEwLjk5ODkgNi41OTU2OCAxMC43OTE5QzYuMzk0MTcgMTAuNTg0OCA2LjE1MzcyIDEwLjQyMDMgNS44ODg0IDEwLjMwOEM1LjYyMzA5IDEwLjE5NTggNS4zMzgyMyAxMC4xMzc5IDUuMDUwNDggMTAuMTM3OUM0Ljc2MjczIDEwLjEzNzkgNC40Nzc4NiAxMC4xOTU4IDQuMjEyNTUgMTAuMzA4QzMuOTQ3MjMgMTAuNDIwMyAzLjcwNjc4IDEwLjU4NDggMy41MDUyNyAxMC43OTE5QzMuMzAzNzUgMTAuOTk4OSAzLjE0NTIxIDExLjI0NDQgMy4wMzg5MiAxMS41MTM5QzIuOTMyNjMgMTEuNzgzNSAyLjg4MDcxIDEyLjA3MTcgMi44ODYyMSAxMi4zNjE3VjE0LjU0MzdIMS40NDMxMVY4QzEuNDQ0NzggNi4yNjQ1OSAyLjEyOTQyIDQuNjAwNzUgMy4zNDY3NyAzLjM3MzYzQzQuNTY0MTEgMi4xNDY1MiA2LjIxNDcxIDEuNDU2MzggNy45MzYyOSAxLjQ1NDY5VjBDNS44MzIyMyAwLjAwMjUzMjc0IDMuODE1MDYgMC44NDYyMDEgMi4zMjcyNiAyLjM0NTk0QzAuODM5NDYyIDMuODQ1NjkgMC4wMDI1MTI1NyA1Ljg3OTA1IDAgOFYxNkg0LjMyODUzVjEyLjM2MTdDNC4zMjg1MyAxMi4xNjgyIDQuNDA0NzYgMTEuOTgyNyA0LjU0MDQ0IDExLjg0NkM0LjY3NjEzIDExLjcwOTIgNC44NjAxNyAxMS42MzIzIDUuMDUyMDYgMTEuNjMyM0M1LjI0Mzk1IDExLjYzMjMgNS40Mjc5OCAxMS43MDkyIDUuNTYzNjcgMTEuODQ2QzUuNjk5MzYgMTEuOTgyNyA1Ljc3NTU5IDEyLjE2ODIgNS43NzU1OSAxMi4zNjE3VjE1Ljk5ODRIMTAuMTA0OVYxMi4zNjE3QzEwLjEwMTcgMTIuMjY0MiAxMC4xMTggMTIuMTY3IDEwLjE1MjggMTIuMDc2QzEwLjE4NzYgMTEuOTg1IDEwLjI0MDIgMTEuOTAyIDEwLjMwNzUgMTEuODMxOUMxMC4zNzQ4IDExLjc2MTggMTAuNDU1MyAxMS43MDYgMTAuNTQ0NCAxMS42Njc5QzEwLjYzMzUgMTEuNjI5OSAxMC43MjkzIDExLjYxMDMgMTAuODI2MSAxMS42MTAzQzEwLjkyMjggMTEuNjEwMyAxMS4wMTg2IDExLjYyOTkgMTEuMTA3NyAxMS42Njc5QzExLjE5NjggMTEuNzA2IDExLjI3NzQgMTEuNzYxOCAxMS4zNDQ3IDExLjgzMTlDMTEuNDExOSAxMS45MDIgMTEuNDY0NSAxMS45ODUgMTEuNDk5MyAxMi4wNzZDMTEuNTM0MSAxMi4xNjcgMTEuNTUwNCAxMi4yNjQyIDExLjU0NzIgMTIuMzYxN1YxNS45OTg0SDEyLjk5MDNWMTIuMzYxN0MxMi45ODkzIDExLjc4MjcgMTIuNzYwMyAxMS4yMjc5IDEyLjM1MzcgMTAuODE5MUMxMS45NDcgMTAuNDEwMiAxMS4zOTYgMTAuMTgwOCAxMC44MjE3IDEwLjE4MTJaIiBmaWxsPSIjMDE2MDU5Ii8+CjxwYXRoIGQ9Ik0xOC41MTM0IDcuNzUwMDVMMTcuNDkzNiA2LjcyMTI0QzE3LjAzNjcgNy4xODI4NiAxNi40ODI2IDcuNTM1MDEgMTUuODcyNSA3Ljc1MTY1VjMuNjM1NjFDMTUuODU4NCAyLjY4MDUyIDE1LjQ3MjIgMS43NjkzNCAxNC43OTcyIDEuMDk4OTRDMTQuMTIyMiAwLjQyODUzMyAxMy4yMTI3IDAuMDUyNzM0NCAxMi4yNjUxIDAuMDUyNzM0NEMxMS4zMTc1IDAuMDUyNzM0NCAxMC40MDggMC40Mjg1MzMgOS43MzI5NyAxLjA5ODk0QzkuMDU3OTggMS43NjkzNCA4LjY3MTc1IDIuNjgwNTIgOC42NTc3MSAzLjYzNTYxQzguNjU3NzEgNS4xNzg5OSA5LjI2NTY3IDYuNjU5MjMgMTAuMzQ3OSA3Ljc1MDk0QzExLjQzMDIgOC44NDI2NSAxMi44OTgzIDkuNDU2NSAxNC40MjkzIDkuNDU3NTZWMTIuMzYxNEgxNS44NzI1VjkuMjcwOTRDMTYuODcyNiA5LjAxMjkyIDE3Ljc4NSA4LjQ4NzQ2IDE4LjUxMzQgNy43NTAwNVpNMTAuMTAwOCAzLjYzNTYxQzEwLjExMTcgMy4wNjQyMiAxMC4zNDQ0IDIuNTE5OTMgMTAuNzQ5MSAyLjExOTcxQzExLjE1MzggMS43MTk0OSAxMS42OTgxIDEuNDk1MjkgMTIuMjY1MSAxLjQ5NTI5QzEyLjgzMiAxLjQ5NTI5IDEzLjM3NjMgMS43MTk0OSAxMy43ODEgMi4xMTk3MUMxNC4xODU3IDIuNTE5OTMgMTQuNDE4NSAzLjA2NDIyIDE0LjQyOTMgMy42MzU2MVY3Ljk5OTY4QzEzLjI4MTcgNy45OTgyIDEyLjE4MTQgNy41Mzc5MiAxMS4zNyA2LjcxOTc5QzEwLjU1ODUgNS45MDE2NyAxMC4xMDIxIDQuNzkyNSAxMC4xMDA4IDMuNjM1NjFaIiBmaWxsPSIjMDE2MDU5Ii8+Cjwvc3ZnPgo=">
+    
+    <meta name="robots" content="noarchive">
+    
+    <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+        <link rel="alternate" media="handheld" href=""> -->
+        
+        
+        <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css?v=">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        
+        <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+
+    <!-- 
+      <a class="site-title" href="http://localhost:4000/">Mammoth release notes</a>
+     -->
+     <a class="site-title">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTk1IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTk1IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTI2LjYwMjQgMjUuNDUzMUMyNS4xOTE4IDI1LjQ1NDcgMjMuODM5NCAyNi4wMyAyMi44NDIxIDI3LjA1MjdDMjEuODQ0OCAyOC4wNzU1IDIxLjI4NDEgMjkuNDYyMSAyMS4yODMxIDMwLjkwODJWMzYuMzYxM0gxNy43MzU2VjMwLjkwODJDMTcuNzQ5MSAzMC4xODMyIDE3LjYyMTUgMjkuNDYyNyAxNy4zNjAyIDI4Ljc4ODhDMTcuMDk4OSAyOC4xMTQ5IDE2LjcwOTIgMjcuNTAxMyAxNi4yMTM4IDI2Ljk4MzZDMTUuNzE4NCAyNi40NjYgMTUuMTI3NCAyNi4wNTQ4IDE0LjQ3NTEgMjUuNzc0MUMxMy44MjI5IDI1LjQ5MzQgMTMuMTIyNyAyNS4zNDg4IDEyLjQxNTMgMjUuMzQ4OEMxMS43MDc5IDI1LjM0ODggMTEuMDA3NyAyNS40OTM0IDEwLjM1NTUgMjUuNzc0MUM5LjcwMzI2IDI2LjA1NDggOS4xMTIxOCAyNi40NjYgOC42MTY4MSAyNi45ODM2QzguMTIxNDQgMjcuNTAxMyA3LjczMTcxIDI4LjExNDkgNy40NzA0MSAyOC43ODg4QzcuMjA5MTEgMjkuNDYyNyA3LjA4MTQ5IDMwLjE4MzIgNy4wOTUwMiAzMC45MDgyVjM2LjM2MTNIMy41NDc1MVYxOS45OThDMy41NTIxNCAxNS42NTk3IDUuMjM1MzIgMTEuNTAwNCA4LjIyNzc0IDguNDMyNjdDMTEuMjIwMiA1LjM2NDk5IDE1LjI3NzQgMy42Mzk0OCAxOS41MDkzIDMuNjM0NzNWMEMxNC4zMzcyIDAuMDA1ODA0MjUgOS4zNzg1MyAyLjExNDUzIDUuNzIxMSA1Ljg2MzU3QzIuMDYzNjcgOS42MTI2MSAwLjAwNjE3NzUgMTQuNjk1OCAwIDE5Ljk5OFYzOS45OThIMTAuNjQwNlYzMC45MDgyQzEwLjY0MDYgMzAuNDI1OSAxMC44Mjc1IDI5Ljk2MzQgMTEuMTYwMSAyOS42MjI0QzExLjQ5MjcgMjkuMjgxNCAxMS45NDM5IDI5LjA4OTggMTIuNDE0MyAyOS4wODk4QzEyLjg4NDggMjkuMDg5OCAxMy4zMzU5IDI5LjI4MTQgMTMuNjY4NiAyOS42MjI0QzE0LjAwMTIgMjkuOTYzNCAxNC4xODgxIDMwLjQyNTkgMTQuMTg4MSAzMC45MDgyVjM5Ljk5OEgyNC44MzA2VjMwLjkwODJDMjQuODIyNyAzMC42NjQ1IDI0Ljg2MjggMzAuNDIxNiAyNC45NDgzIDMwLjE5NDFDMjUuMDMzOSAyOS45NjY1IDI1LjE2MzIgMjkuNzU4OSAyNS4zMjg2IDI5LjU4MzdDMjUuNDk0IDI5LjQwODQgMjUuNjkyMSAyOS4yNjkgMjUuOTExMSAyOS4xNzM5QzI2LjEzMDEgMjkuMDc4NyAyNi4zNjU1IDI5LjAyOTYgMjYuNjAzNCAyOS4wMjk2QzI2Ljg0MTMgMjkuMDI5NiAyNy4wNzY3IDI5LjA3ODcgMjcuMjk1NyAyOS4xNzM5QzI3LjUxNDcgMjkuMjY5IDI3LjcxMjggMjkuNDA4NCAyNy44NzgyIDI5LjU4MzdDMjguMDQzNiAyOS43NTg5IDI4LjE3MjkgMjkuOTY2NSAyOC4yNTg1IDMwLjE5NDFDMjguMzQ0IDMwLjQyMTYgMjguMzg0MSAzMC42NjQ1IDI4LjM3NjIgMzAuOTA4MlYzOS45OThIMzEuOTIzN1YzMC45MDgyQzMxLjkyMjEgMjkuNDYxOSAzMS4zNjEgMjguMDc1MyAzMC4zNjM0IDI3LjA1MjZDMjkuMzY1OCAyNi4wMjk5IDI4LjAxMzIgMjUuNDU0NyAyNi42MDI0IDI1LjQ1MzFaTTc4LjAwMDUgMTEuMDYxN1YzMC45MTgySDc0LjQ0MTNWMTYuODkzNkw2OC4xMTA2IDMwLjkxODJINjQuNDkzMUw1OC4xNjI0IDE2LjgzMzhWMzAuOTE4Mkg1NC42MDUyVjExLjA2MTdINTkuMzI5NEw2Ni4zMDE4IDI2LjQwMjJMNzMuMjc0MyAxMS4wNjE3SDc4LjAwMDVaTTk2LjE5MTIgMTYuNzQ0MVYzMC45MTgySDkyLjcxOTVWMjkuMTgzNUM5MS4zMzg2IDMwLjU5OTIgODkuNjE3NCAzMS4zMDcgODcuNTU1OCAzMS4zMDdDODUuNzE4OCAzMS4zMTkgODMuOTQzOSAzMC42MjU0IDgyLjU4MDcgMjkuMzYzQzgxLjEzMTEgMjguMDY3IDgwLjQwNyAyNi4yMjI3IDgwLjQwODIgMjMuODMwMUM4MC40MDgyIDIxLjQ1NzUgODEuMTMyNCAxOS42MTg1IDgyLjU4MDcgMTguMzEzMkM4My45NDAxIDE3LjA0MjggODUuNzE2MyAxNi4zNDM4IDg3LjU1NTggMTYuMzU1M0M4OS41OTc5IDE2LjM1NTMgOTEuMzE5MiAxNy4wNjMxIDkyLjcxOTUgMTguNDc4N1YxNi43NDQxSDk2LjE5MTJaTTkxLjQ5NDIgMjYuNzkxQzkyLjI5MTYgMjYuMDUzMiA5Mi42OTAzIDI1LjA2NjMgOTIuNjkwMyAyMy44MzAxQzkyLjY5MDMgMjIuNTk0IDkyLjI5MTYgMjEuNjA3IDkxLjQ5NDIgMjAuODY5M0M5MC42OTY4IDIwLjEzMjkgODkuNjQ2NiAxOS43NjQ3IDg4LjM0MzUgMTkuNzY0N0M4Ny4wNDA0IDE5Ljc2NDcgODUuOTg4MiAyMC4xMzI5IDg1LjE4NjkgMjAuODY5M0M4NC4zODA0IDIxLjYwNyA4My45NzcyIDIyLjU5NCA4My45NzcyIDIzLjgzMDFDODMuOTc3MiAyNS4wNjYzIDg0LjM4MDQgMjYuMDUzMiA4NS4xODY5IDI2Ljc5MUM4NS45OTQ3IDI3LjUyODcgODcuMDUwMSAyNy44OTc1IDg4LjM1MzIgMjcuODk3NUM4OS42NTYzIDI3Ljg5NzUgOTAuNzAzMyAyNy41Mjg3IDkxLjQ5NDIgMjYuNzkxWk0xMjEuNTk3IDIxLjk0NkMxMjEuNTk2IDIwLjE5MjcgMTIxLjEyNCAxOC44MjIzIDEyMC4xODIgMTcuODM0N0MxMTkuMjM5IDE2Ljg0ODQgMTE3Ljk3MyAxNi4zNTUzIDExNi4zODMgMTYuMzU1M0MxMTQuMzIyIDE2LjM1NTMgMTEyLjY5OCAxNy4yMDI3IDExMS41MTEgMTguODk3NEMxMTAuNzMzIDE3LjIwMjcgMTA5LjI5NCAxNi4zNTUzIDEwNy4xOTMgMTYuMzU1M0MxMDUuMTUxIDE2LjM1NTMgMTAzLjU3NiAxNy4yMTI2IDEwMi40NjcgMTguOTI3M1YxNi43NDQxSDk4Ljk5NTdWMzAuOTE4MkgxMDIuNDZWMjQuMjE4OUMxMDIuNDYgMjIuNzAzNiAxMDIuNzcxIDIxLjU4MjQgMTAzLjM5MyAyMC44NTU0QzEwMy42OTIgMjAuNSAxMDQuMDY0IDIwLjIxNzYgMTA0LjQ4MyAyMC4wMjg5QzEwNC45MDIgMTkuODQwMiAxMDUuMzU3IDE5Ljc1IDEwNS44MTUgMTkuNzY0N0MxMDYuNzA5IDE5Ljc2NDcgMTA3LjM5IDIwLjA1MTggMTA3Ljg1NyAyMC42MzJDMTA4LjMyMyAyMS4yMDg5IDEwOC41NTcgMjEuOTk1OCAxMDguNTU3IDIyLjk5MjdWMzAuOTE4MkgxMTIuMDI5VjI0LjIxODlDMTEyLjAyOSAyMi43MDM2IDExMi4zNCAyMS41ODI0IDExMi45NjIgMjAuODU1NEMxMTMuMjYxIDIwLjUgMTEzLjYzMyAyMC4yMTc2IDExNC4wNTIgMjAuMDI4OUMxMTQuNDcxIDE5Ljg0MDIgMTE0LjkyNiAxOS43NSAxMTUuMzgzIDE5Ljc2NDdDMTE2LjI3OCAxOS43NjQ3IDExNi45NTkgMjAuMDUxOCAxMTcuNDI2IDIwLjYzMkMxMTcuODkyIDIxLjIwODkgMTE4LjEyNiAyMS45OTU4IDExOC4xMjYgMjIuOTkyN1YzMC45MTgySDEyMS41OTdWMjEuOTQ2Wk0xNDUuNTAyIDE3LjgzNDdDMTQ2LjQ0NSAxOC44MjIzIDE0Ni45MTYgMjAuMTkyNyAxNDYuOTE2IDIxLjk0NlYzMC45MTgySDE0My40NDVWMjIuOTkyN0MxNDMuNDQ1IDIxLjk5NTggMTQzLjIxMSAyMS4yMDg5IDE0Mi43NDQgMjAuNjMyQzE0Mi4yNzggMjAuMDUxOCAxNDEuNTk3IDE5Ljc2NDcgMTQwLjcwMiAxOS43NjQ3QzE0MC4yNDUgMTkuNzUwMyAxMzkuNzkxIDE5Ljg0MDcgMTM5LjM3MiAyMC4wMjk0QzEzOC45NTQgMjAuMjE4MSAxMzguNTgxIDIwLjUwMDMgMTM4LjI4MyAyMC44NTU0QzEzNy42NiAyMS41ODI0IDEzNy4zNDkgMjIuNzAzNiAxMzcuMzQ5IDI0LjIxODlWMzAuOTE4MkgxMzMuODc4VjIyLjk5MjdDMTMzLjg3OCAyMS45OTU4IDEzMy42NDQgMjEuMjA4OSAxMzMuMTc1IDIwLjYzMkMxMzIuNzExIDIwLjA1MTggMTMyLjAzIDE5Ljc2NDcgMTMxLjEzNSAxOS43NjQ3QzEzMC42NzggMTkuNzUgMTMwLjIyMyAxOS44NDAyIDEyOS44MDQgMjAuMDI4OUMxMjkuMzg1IDIwLjIxNzYgMTI5LjAxMyAyMC41IDEyOC43MTQgMjAuODU1NEMxMjguMDkyIDIxLjU4MjQgMTI3Ljc4IDIyLjcwMzYgMTI3Ljc4IDI0LjIxODlWMzAuOTE4MkgxMjQuMzA5VjE2Ljc0NDFIMTI3Ljc4VjE4LjkyNzNDMTI4Ljg4OSAxNy4yMTI2IDEzMC40NjQgMTYuMzU1MyAxMzIuNTA2IDE2LjM1NTNDMTM0LjYwNyAxNi4zNTUzIDEzNi4wNDYgMTcuMjAyNyAxMzYuODIyIDE4Ljg5NzRDMTM4LjAwOSAxNy4yMDI3IDEzOS42MjkgMTYuMzU1MyAxNDEuNjg0IDE2LjM1NTNDMTQzLjI4NiAxNi4zNTUzIDE0NC41NTggMTYuODQ4NCAxNDUuNTAyIDE3LjgzNDdaTTE1MS4zODggMjkuNTI4NUMxNTIuMTU2IDMwLjEwNjggMTUzLjAxIDMwLjU1NTggMTUzLjkxNiAzMC44NTgzQzE1NC44MTQgMzEuMTU2MyAxNTUuNzUzIDMxLjMwNzcgMTU2LjY5NyAzMS4zMDY5QzE1Ny42NDggMzEuMzA3MyAxNTguNTkzIDMxLjE1NiAxNTkuNDk4IDMwLjg1ODNDMTYwLjQwNyAzMC41NjMzIDE2MS4yNjIgMzAuMTEzOCAxNjIuMDI2IDI5LjUyODVDMTYyLjgyNiAyOC45MDA2IDE2My40NjYgMjguMDg0OCAxNjMuODkzIDI3LjE0OThDMTY0LjM4IDI2LjEwNDYgMTY0LjYyNCAyNC45NTgyIDE2NC42MDcgMjMuODAwMkMxNjQuNjI3IDIyLjY1MjIgMTY0LjM4MiAyMS41MTU2IDE2My44OTMgMjAuNDgyNUMxNjMuNDU4IDE5LjU1NjMgMTYyLjgxMyAxOC43NTA3IDE2Mi4wMTEgMTguMTMzOEMxNjEuMjQ0IDE3LjU1MjMgMTYwLjM5IDE3LjEwMyAxNTkuNDgyIDE2LjgwMzlDMTU4LjU4NCAxNi41MDY0IDE1Ny42NDcgMTYuMzU1IDE1Ni43MDMgMTYuMzU1M0MxNTUuNzUyIDE2LjM1NDkgMTU0LjgwOCAxNi41MDYzIDE1My45MDIgMTYuODAzOUMxNTIuOTk0IDE3LjEwMTcgMTUyLjE0IDE3LjU1MSAxNTEuMzc0IDE4LjEzMzhDMTUwLjU3MiAxOC43NTA3IDE0OS45MjYgMTkuNTU2MyAxNDkuNDkxIDIwLjQ4MjVDMTQ5LjAwMiAyMS41MTU2IDE0OC43NTggMjIuNjUyMiAxNDguNzc4IDIzLjgwMDJDMTQ4Ljc1NyAyNC45NjM3IDE0OS4wMDIgMjYuMTE2IDE0OS40OTEgMjcuMTY1OEMxNDkuOTI2IDI4LjEwMDQgMTUwLjU3NyAyOC45MTE2IDE1MS4zODggMjkuNTI4NVpNMTYxLjA0OCAyMy44MzAxQzE2MS4wNDggMjUuMTQ2MSAxNjAuNjA2IDI2LjE1MjkgMTU5LjcyMiAyNi44NTA4SDE1OS43MTZDMTU4Ljg0MyAyNy41Mjk5IDE1Ny43NzcgMjcuODk3NiAxNTYuNjgyIDI3Ljg5NzZDMTU1LjU4NiAyNy44OTc2IDE1NC41MiAyNy41Mjk5IDE1My42NDggMjYuODUwOEMxNTIuNzYxIDI2LjE1MjkgMTUyLjMxOCAyNS4xNDYxIDE1Mi4zMTkgMjMuODMwMUMxNTIuMzIgMjIuNTE0MiAxNTIuNzYzIDIxLjUwNzMgMTUzLjY0OCAyMC44MDk1QzE1NC41MiAyMC4xMTU5IDE1NS41OTcgMTkuNzQ3NSAxNTYuNzAxIDE5Ljc2NDdDMTU3Ljc5NyAxOS43NTI5IDE1OC44NjMgMjAuMTI3MyAxNTkuNzIyIDIwLjgyNTRDMTYwLjYwNiAyMS41MzM5IDE2MS4wNDggMjIuNTM1NSAxNjEuMDQ4IDIzLjgzMDFaTTE3OC40NzQgMjguNjQ1MkMxNzguMDY2IDI5LjQ2MjcgMTc3LjQzMSAzMC4xMzg4IDE3Ni42NSAzMC41ODkyQzE3NS44MjEgMzEuMDczMyAxNzQuODgxIDMxLjMyMTEgMTczLjkyNyAzMS4zMDdDMTcyLjQzIDMxLjMwNyAxNzEuMTk4IDMwLjg2MzcgMTcwLjIzMiAyOS45NzcxQzE2OS4yNjYgMjkuMDkwNSAxNjguNzg1IDI3LjkxODggMTY4Ljc4OSAyNi40NjJWMjAuMTUxNUgxNjUuMzc1VjE2Ljc0NDFIMTY4Ljc4OVYxMS45NTg5SDE3Mi4yNlYxNi43NDQxSDE3Ni42OTVWMjAuMTUxNUgxNzIuMjZWMjUuOTgzNUMxNzIuMjYgMjYuNjAxNSAxNzIuNDExIDI3LjA3NTQgMTcyLjcxMiAyNy40MDUxQzE3Mi44NjggMjcuNTcwNiAxNzMuMDU3IDI3LjcwMDEgMTczLjI2NiAyNy43ODUxQzE3My40NzUgMjcuODcgMTczLjY5OSAyNy45MDgzIDE3My45MjMgMjcuODk3NUMxNzQuNzQgMjcuODk3NSAxNzUuMjY1IDI3LjUxODcgMTc1LjQ5OSAyNi43NjExTDE3OC40NzQgMjguNjQ1MlpNMTk0Ljg4IDIyLjY2MzdDMTk0Ljg4IDIwLjU3MTYgMTk0LjI5NiAxOC45OTcxIDE5My4xMjkgMTcuOTQwNEMxOTEuOTYyIDE2Ljg4MzcgMTkwLjQ0MyAxNi4zNTUzIDE4OC41NyAxNi4zNTUzQzE4Ny41MjEgMTYuMzM0MyAxODYuNDggMTYuNTUxNCAxODUuNTIxIDE2Ljk5MDhDMTg0LjU2MyAxNy40MzAzIDE4My43MTIgMTguMDgxMyAxODMuMDI3IDE4Ljg5NzRWMTEuMDYxN0gxNzkuNTU2VjMwLjkxODJIMTgzLjAyN1YyNC43NTczQzE4My4wMjkgMjMuMTAyNCAxODMuNTAxIDIxLjg1NjMgMTg0LjQ0MyAyMS4wMTg4QzE4NS4zMzggMjAuMjAxNyAxODYuNDk3IDE5Ljc1NDcgMTg3LjY5NSAxOS43NjQ3QzE5MC4xNjUgMTkuNzY0NyAxOTEuNCAyMS4xMzk4IDE5MS40IDIzLjg4OTlWMzAuOTE4MkgxOTQuODhWMjIuNjYzN1pNNDMuMDAzOCAxNi43OTU5TDQ1LjUxMDggMTkuMzY2QzQzLjcyMjkgMjEuMjExMSA0MS40ODI5IDIyLjUyOCAzOS4wMjY1IDIzLjE3ODFWMzAuOTA4MkgzNS40NzlWMjMuNjM0N0MzMS43MTY4IDIzLjYzMjEgMjguMTA5NSAyMi4wOTg4IDI1LjQ0OTMgMTkuMzcxN0MyMi43ODkxIDE2LjY0NDYgMjEuMjkzNSAxMi45NDY2IDIxLjI5MDkgOS4wODk4MkMyMS4zMjU0IDYuNzAyMTEgMjIuMjc0OCA0LjQyNDE2IDIzLjkzNDEgMi43NDgxNUMyNS41OTM0IDEuMDcyMTQgMjcuODI5MyAwLjEzMjY0MyAzMC4xNTg3IDAuMTMyNjQzQzMyLjQ4ODEgMC4xMzI2NDMgMzQuNzI0IDEuMDcyMTQgMzYuMzgzMiAyLjc0ODE1QzM4LjA0MjUgNC40MjQxNiAzOC45OTIgNi43MDIxMSAzOS4wMjY1IDkuMDg5ODJWMTkuMzcxOUM0MC41MjM2IDE4LjgyOTMgNDEuODgyOCAxNy45NDkgNDMuMDAzOCAxNi43OTU5Wk0yNS4yMDYgNi45NzA0NEMyNC45NDQ3IDcuNjQ0MyAyNC44MTcxIDguMzY0ODEgMjQuODMwNiA5LjA4OTgyQzI0LjgzMzcgMTEuOTgxOSAyNS45NTU4IDE0Ljc1NDYgMjcuOTUwNiAxNi43OTk2QzI5Ljk0NTQgMTguODQ0NiAzMi42NTAxIDE5Ljk5NDggMzUuNDcxMiAxOS45OThWOS4wODk4MkMzNS40ODQ3IDguMzY0ODEgMzUuMzU3MSA3LjY0NDMgMzUuMDk1OCA2Ljk3MDQ0QzM0LjgzNDUgNi4yOTY1OCAzNC40NDQ4IDUuNjgyODkgMzMuOTQ5NCA1LjE2NTI2QzMzLjQ1NCA0LjY0NzYyIDMyLjg2MjkgNC4yMzY0MyAzMi4yMTA3IDMuOTU1NzNDMzEuNTU4NSAzLjY3NTAzIDMwLjg1ODMgMy41MzA0NSAzMC4xNTA5IDMuNTMwNDVDMjkuNDQzNSAzLjUzMDQ1IDI4Ljc0MzMgMy42NzUwMyAyOC4wOTExIDMuOTU1NzNDMjcuNDM4OSA0LjIzNjQzIDI2Ljg0NzggNC42NDc2MiAyNi4zNTI0IDUuMTY1MjZDMjUuODU3IDUuNjgyODkgMjUuNDY3MyA2LjI5NjU4IDI1LjIwNiA2Ljk3MDQ0WiIgZmlsbD0iIzAwNEMzQSIvPgo8L3N2Zz4K" />
+     </a>
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+                <a class="link-url" href="http://localhost:4000/about.html">About</a>
+              
+            
+          
+            
+            
+              
+                <a class="link-url" href="http://localhost:4000/contact.html">Contact</a>
+              
+            
+          
+            
+            
+              
+                <a class="link-url" href="http://localhost:4000/now.html">Now</a>
+              
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+        
+        
+        
+        
+        
+        <section class="page-header">
+            <h1 class="project-name">Mammoth release notes</h1>
+            <!-- 
+            <h1 class="project-name">404 Error</h1>
+              -->
+            <!-- <h2 class="project-tagline">Ah snap! We could not find what you are looking for!</h2> -->
+            <!-- Post tagline -->
+            
+            <!-- End: Post tagline -->
+        </section>
+        <div class="accordion accordion-flush mobileView px-3 mt-3" id="mobileContent">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Release notes
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse px-3" aria-labelledby="flush-headingOne" data-bs-parent="#mobileContent">
+                <h2>Release notes</h2>
+
+  <ul class="post-list left-section">
+    
+      <li>
+
+        
+
+        <h2>
+          <a class="post-link" href="http://localhost:4000/2022/08/24/R2022.32.html" title="Release version 2022.32">Release version 2022.32</a>
+          <span class="post-meta">( Aug 24, 2022 )</span>
+        </h2>
+
+      </li>
+    
+      <li>
+
+        
+
+        <h2>
+          <a class="post-link" href="http://localhost:4000/2022/08/17/R2022.31.html" title="Release version 2022.31">Release version 2022.31</a>
+          <span class="post-meta">( Aug 17, 2022 )</span>
+        </h2>
+
+      </li>
+    
+  </ul>
+
+<article class="right-section">
+
+  <div>
+    <p>Try got get back to the Home Page and start over!</p>
+
+<p><a href="http://localhost:4000/">Go to the Home Page</a></p>
+
+  </div>
+
+</article>
+
+              </div>
+            </div>
+          </div>
+        <section class="main-content mobile-content">
+            <h2>Release notes</h2>
+
+  <ul class="post-list left-section">
+    
+      <li>
+
+        
+
+        <h2>
+          <a class="post-link" href="http://localhost:4000/2022/08/24/R2022.32.html" title="Release version 2022.32">Release version 2022.32</a>
+          <span class="post-meta">( Aug 24, 2022 )</span>
+        </h2>
+
+      </li>
+    
+      <li>
+
+        
+
+        <h2>
+          <a class="post-link" href="http://localhost:4000/2022/08/17/R2022.31.html" title="Release version 2022.31">Release version 2022.31</a>
+          <span class="post-meta">( Aug 17, 2022 )</span>
+        </h2>
+
+      </li>
+    
+  </ul>
+
+<article class="right-section">
+
+  <div>
+    <p>Try got get back to the Home Page and start over!</p>
+
+<p><a href="http://localhost:4000/">Go to the Home Page</a></p>
+
+  </div>
+
+</article>
+ 
+        </section>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            var menu = document.querySelector("nav.site-nav");
+            var checkbox = document.getElementById("nav-trigger");
+            
+            // close menu if click outside menu
+            document.addEventListener("click", function(e) {
+                if (menu != e.target &&
+                        !isDescendant(menu, e.target)) {
+                    checkbox.checked = false;
+                }
+            }, false);
+            
+            function isDescendant(parent, child) {
+                var node = child.parentNode;
+                while (node != null) {
+                    if (node == parent) {
+                        return true;
+                    }
+                    node = node.parentNode;
+                }
+                return false;
+            }  
+        </script>
+        <script>
+     // toggle js
+        $(document).ready(function(){
+                $(".post-link").click(function(){
+                    if($('a').hasClass('active')){
+                        $('a').removeClass('active')
+                    }else{
+                        $('a').addClass('active')
+                    }
+            });
+        });
+        </script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
+    </body>
+    </html>
+    
