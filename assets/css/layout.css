@@ -220,3 +220,7 @@ label {
  a:hover {
     color: #069762 !important;
  }
+ .site-nav {
+    background-color: #fff;
+    top:20px;
+ }
