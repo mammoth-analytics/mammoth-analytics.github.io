@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-09T13:05:27+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mammoth release notes</title><subtitle></subtitle><entry><title type="html">Release version 2022.44</title><link href="http://localhost:4000/2022/11/02/R2022.44.html" rel="alternate" type="text/html" title="Release version 2022.44" /><published>2022-11-02T17:49:06+05:30</published><updated>2022-11-02T17:49:06+05:30</updated><id>http://localhost:4000/2022/11/02/R2022.44</id><content type="html" xml:base="http://localhost:4000/2022/11/02/R2022.44.html">&lt;h2 id=&quot;product-updates&quot;&gt;&lt;strong&gt;PRODUCT UPDATES:&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;bug-fixes&quot;&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;These were the bugs detected and they’ve now been fixed -&lt;/p&gt;
+
+&lt;p&gt;1.Publish as view was not showing up in the pipeline.&lt;/p&gt;
+
+&lt;p&gt;2.Convert column rule was returning blank values in all column.&lt;/p&gt;
+
+&lt;p&gt;3.Multiple click on create csv link option was creating multiple tasks in pipeline.&lt;/p&gt;
+
+&lt;p&gt;4.Data library search bar was showing up on expired account screen.&lt;/p&gt;
+
+&lt;p&gt;5.Allowing to apply Multiple task and Publish to DB/Publish to view together.&lt;/p&gt;
+
+&lt;p&gt;6.Tasks 3 dot menu of tasks  was not clickable  in pipeline.&lt;/p&gt;
+
+&lt;h3 id=&quot;internal-improvements&quot;&gt;&lt;strong&gt;Internal Improvements:&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;1.Fixed a sentry error in explore cards.&lt;/p&gt;
+
+&lt;p&gt;2.Removed legacy login module from frontend.&lt;/p&gt;
+
+&lt;p&gt;3.Invalid cache was being stored in frontend.We fixed it.&lt;/p&gt;</content><author><name></name></author><summary type="html">PRODUCT UPDATES:</summary></entry></feed>
