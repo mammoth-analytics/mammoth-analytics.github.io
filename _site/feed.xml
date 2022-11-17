@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-09T13:05:27+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mammoth release notes</title><subtitle></subtitle><entry><title type="html">Release version 2022.44</title><link href="http://localhost:4000/2022/11/02/R2022.44.html" rel="alternate" type="text/html" title="Release version 2022.44" /><published>2022-11-02T17:49:06+05:30</published><updated>2022-11-02T17:49:06+05:30</updated><id>http://localhost:4000/2022/11/02/R2022.44</id><content type="html" xml:base="http://localhost:4000/2022/11/02/R2022.44.html">&lt;h2 id=&quot;product-updates&quot;&gt;&lt;strong&gt;PRODUCT UPDATES:&lt;/strong&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-17T13:23:22+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mammoth release notes</title><subtitle></subtitle><entry><title type="html">Release version 2022.46</title><link href="http://localhost:4000/2022/11/17/R2022.46.html" rel="alternate" type="text/html" title="Release version 2022.46" /><published>2022-11-17T01:19:06+05:30</published><updated>2022-11-17T01:19:06+05:30</updated><id>http://localhost:4000/2022/11/17/R2022.46</id><content type="html" xml:base="http://localhost:4000/2022/11/17/R2022.46.html">&lt;h2 id=&quot;product-updates&quot;&gt;&lt;strong&gt;PRODUCT UPDATES:&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;enhancement&quot;&gt;&lt;strong&gt;Enhancement:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;1.Salesforce integration support for sandbox salesforce domain:
+  Salesforce supports only main domain of salesforce.Now we are allowing the user to use it for custom domains too .&lt;/p&gt;
+
+&lt;p&gt;2.In 3P connectors, allow for latest batch pull to replace existing batch data in Mammoth:
+  Mammoth allows for incremental data pull based on unique sequence column.However, the data that is pulled is kept in combine mode where every pull creates a new batch of data.Now besides the option to create a new batch, we are allowing the user an option to replace the data with the new increment.
+  This reduces the amount of data stored in Mammoth and avoids redundant processing.&lt;/p&gt;
+
+&lt;h3 id=&quot;bug-fixes&quot;&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;These were the bugs detected and they’ve now been fixed -&lt;/p&gt;
+
+&lt;p&gt;1.Pipeline was showing loader and preventing access to task menu.&lt;/p&gt;
+
+&lt;p&gt;2.Error column was showing up in column selection field of the task after copy pasting a task.&lt;/p&gt;
+
+&lt;p&gt;3.Canceling a function was showing inocorrect data types in a specific scenario.&lt;/p&gt;
+
+&lt;p&gt;4.Format not handled correctly for numeric columns.&lt;/p&gt;
+
+&lt;p&gt;5.Multiple issues was there in Search bar on landing page.&lt;/p&gt;
+
+&lt;p&gt;6.A file with unambigous date column was asking  for user input.&lt;/p&gt;
+
+&lt;p&gt;7.Pending update summary should show right details including right DS and view name details in the summary.&lt;/p&gt;
+
+&lt;p&gt;8.Data library was showing up under reports when user switches the account.&lt;/p&gt;
+
+&lt;p&gt;9.A file was showing empty grid.&lt;/p&gt;
+
+&lt;p&gt;10.Defult numeric format(comma) was showing up in crosstab.&lt;/p&gt;
+
+&lt;p&gt;11.Column format was not correct for dataset and batch data.&lt;/p&gt;
+
+&lt;p&gt;12.Column to rows rule - Formatting didn’t get apply when date columns are used in Values column.&lt;/p&gt;
+
+&lt;p&gt;13.Last row was not visible in the grid .&lt;/p&gt;
+
+&lt;h3 id=&quot;internal-improvements&quot;&gt;&lt;strong&gt;Internal Improvements:&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;1.Data passthrough backend work is now complete.&lt;/p&gt;
+
+&lt;p&gt;2.We have converted snowflake from cdata driver to python connector to work for large data.The large data get used to stuck while creating the database.With this change
+  we can pull the data within seconds.&lt;/p&gt;</content><author><name></name></author><summary type="html">PRODUCT UPDATES:</summary></entry><entry><title type="html">Release version 2022.44</title><link href="http://localhost:4000/2022/11/02/R2022.44.html" rel="alternate" type="text/html" title="Release version 2022.44" /><published>2022-11-02T17:49:06+05:30</published><updated>2022-11-02T17:49:06+05:30</updated><id>http://localhost:4000/2022/11/02/R2022.44</id><content type="html" xml:base="http://localhost:4000/2022/11/02/R2022.44.html">&lt;h2 id=&quot;product-updates&quot;&gt;&lt;strong&gt;PRODUCT UPDATES:&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;h3 id=&quot;bug-fixes&quot;&gt;&lt;strong&gt;Bug fixes:&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;These were the bugs detected and they’ve now been fixed -&lt;/p&gt;

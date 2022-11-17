@@ -162,6 +162,17 @@
         
 
         <h2>
+          <a class="post-link" href="http://localhost:4000/2022/11/17/R2022.46.html" title="Release version 2022.46">Release version 2022.46</a>
+          <span class="post-meta">( Nov 17, 2022 )</span>
+        </h2>
+
+      </li>
+    
+      <li>
+
+        
+
+        <h2>
           <a class="post-link" href="http://localhost:4000/2022/11/02/R2022.44.html" title="Release version 2022.44">Release version 2022.44</a>
           <span class="post-meta">( Nov 2, 2022 )</span>
         </h2>
@@ -172,19 +183,35 @@
   <article class="right-section">
     <div>
       <h2 id="product-updates"></h2>
+    <h3 id="enhancement">
+      <strong>Enhancement:</strong></h3>
+      <strong>1.Salesforce integration support for sandbox salesforce domain:</strong></h3>
+      <p>Salesforce supports only main domain of salesforce.Now we are allowing the user to use it for custom domains too .</p>
+      <strong>2.In 3P connectors, allow for latest batch pull to replace existing batch data in Mammoth:</strong></h3>
+      <p>Mammoth allows for incremental data pull based on unique sequence column.However, the data that is pulled is kept in combine mode where every pull creates a new batch of data.Now besides the option to create a new batch, we are allowing the user an option to replace the data with the new increment.
+        This reduces the amount of data stored in Mammoth and avoids redundant processing.</p>
+
     <h3 id="bug-fixes">
       <strong>Bug fixes:</strong></h3>
-      <p>1.Publish as view was not showing up in the pipeline.</p>
-      <p>2.Convert column rule was returning blank values in all column.</p>
-      <p>3.Multiple click on create csv link option was creating multiple tasks in pipeline.</p>
-      <p>4.Data library search bar was showing up on expired account screen.</p>
-      <p>5.Allowing to apply Multiple task and Publish to DB/Publish to view together.</p>
-      <p>6.Tasks 3 dot menu of tasks  was not clickable  in pipeline.</p>  
+      <p>1.Pipeline was showing loader and preventing access to task menu.</p>
+      <p>2.Error column was showing up in column selection field of the task after copy pasting a task.</p>
+      <p>3.Canceling a function was showing inocorrect data types in a specific scenario.</p>
+      <p>4.Format not handled correctly for numeric columns.</p>
+      <p>5.Multiple issues was there in Search bar on landing page.</p>
+      <p>6.A file with unambigous date column was asking  for user input.</p>
+      <p>7.Pending update summary should show right details including right DS and view name details in the summary.</p>
+      <p>8.Data library was showing up under reports when user switches the account.</p>
+      <p>9.A file was showing empty grid</p>
+      <p>10.Defult numeric format(comma) was showing up in crosstab.</p>
+      <p>11.Column format was not correct for dataset and batch data</p>
+      <p>12.Column to rows rule - Formatting didn't get apply when date columns are used in Values column</p>
+      <p>13.Last row was not visible in the grid</p>
+
     <h3 id="internal-improvements">
       <strong>Internal Improvements:</strong></h3>
-      <p>1.Fixed a sentry error in explore cards.</p>
-      <p>2.Removed legacy login module from frontend.</p>
-      <p>3.Invalid cache was being stored in frontend.We fixed it.</p>
+      <p>1.Data passthrough backend work is  now complete.</p>
+      <p>2.We have converted snowflake from cdata driver to python connector to work for large data.The large data get used to stuck while creating the database.With this change
+        we can pull the data within seconds.</p>
   </article>
 </div>
 </div>
@@ -205,6 +232,17 @@
         
 
         <h2>
+          <a class="post-link" href="http://localhost:4000/2022/11/17/R2022.46.html" title="Release version 2022.46">Release version 2022.46</a>
+          <span class="post-meta">( Nov 17, 2022 )</span>
+        </h2>
+
+      </li>
+    
+      <li>
+
+        
+
+        <h2>
           <a class="post-link" href="http://localhost:4000/2022/11/02/R2022.44.html" title="Release version 2022.44">Release version 2022.44</a>
           <span class="post-meta">( Nov 2, 2022 )</span>
         </h2>
@@ -215,19 +253,35 @@
   <article class="right-section">
     <div>
       <h2 id="product-updates"></h2>
+    <h3 id="enhancement">
+      <strong>Enhancement:</strong></h3>
+      <strong>1.Salesforce integration support for sandbox salesforce domain:</strong></h3>
+      <p>Salesforce supports only main domain of salesforce.Now we are allowing the user to use it for custom domains too .</p>
+      <strong>2.In 3P connectors, allow for latest batch pull to replace existing batch data in Mammoth:</strong></h3>
+      <p>Mammoth allows for incremental data pull based on unique sequence column.However, the data that is pulled is kept in combine mode where every pull creates a new batch of data.Now besides the option to create a new batch, we are allowing the user an option to replace the data with the new increment.
+        This reduces the amount of data stored in Mammoth and avoids redundant processing.</p>
+
     <h3 id="bug-fixes">
       <strong>Bug fixes:</strong></h3>
-      <p>1.Publish as view was not showing up in the pipeline.</p>
-      <p>2.Convert column rule was returning blank values in all column.</p>
-      <p>3.Multiple click on create csv link option was creating multiple tasks in pipeline.</p>
-      <p>4.Data library search bar was showing up on expired account screen.</p>
-      <p>5.Allowing to apply Multiple task and Publish to DB/Publish to view together.</p>
-      <p>6.Tasks 3 dot menu of tasks  was not clickable  in pipeline.</p>  
+      <p>1.Pipeline was showing loader and preventing access to task menu.</p>
+      <p>2.Error column was showing up in column selection field of the task after copy pasting a task.</p>
+      <p>3.Canceling a function was showing inocorrect data types in a specific scenario.</p>
+      <p>4.Format not handled correctly for numeric columns.</p>
+      <p>5.Multiple issues was there in Search bar on landing page.</p>
+      <p>6.A file with unambigous date column was asking  for user input.</p>
+      <p>7.Pending update summary should show right details including right DS and view name details in the summary.</p>
+      <p>8.Data library was showing up under reports when user switches the account.</p>
+      <p>9.A file was showing empty grid</p>
+      <p>10.Defult numeric format(comma) was showing up in crosstab.</p>
+      <p>11.Column format was not correct for dataset and batch data</p>
+      <p>12.Column to rows rule - Formatting didn't get apply when date columns are used in Values column</p>
+      <p>13.Last row was not visible in the grid</p>
+
     <h3 id="internal-improvements">
       <strong>Internal Improvements:</strong></h3>
-      <p>1.Fixed a sentry error in explore cards.</p>
-      <p>2.Removed legacy login module from frontend.</p>
-      <p>3.Invalid cache was being stored in frontend.We fixed it.</p>
+      <p>1.Data passthrough backend work is  now complete.</p>
+      <p>2.We have converted snowflake from cdata driver to python connector to work for large data.The large data get used to stuck while creating the database.With this change
+        we can pull the data within seconds.</p>
   </article>
 </div>
 </div>

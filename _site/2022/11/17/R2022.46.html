@@ -32,7 +32,7 @@
 
 <!-- Place this data between the <head> tags of your website -->
 
-<meta name="description" content="A few more words about this theme" />
+<meta name="description" content="PRODUCT UPDATES:" />
 
 
 
@@ -43,41 +43,47 @@
 
 
 
-<meta name="twitter:title" content="About" />
-<meta name="twitter:description" content="A few more words about this theme" />
+<meta name="twitter:title" content="Release version 2022.46" />
+<meta name="twitter:description" content="PRODUCT UPDATES:" />
 
 
 
 <!-- Twitter summary card with large image must be at least 280x150px -->
 
-<meta name="twitter:url" content="http://localhost:4000//about.html" />
+<meta name="twitter:url" content="http://localhost:4000//2022/11/17/R2022.46.html" />
 
 <!-- Open Graph data -->
-<meta property="og:title" content="About" />
+<meta property="og:title" content="Release version 2022.46" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:4000//about.html" />
+<meta property="og:url" content="http://localhost:4000//2022/11/17/R2022.46.html" />
 
 
-<meta property="og:description" content="A few more words about this theme" />
+<meta property="og:description" content="PRODUCT UPDATES:" />
 <meta property="og:site_name" content="Mammoth release notes" />
 
 
 <meta property="og:locale" content="" />
 
 
+  <meta property="article:published_time" content="2022-11-17T01:19:06+05:30" />
+
+
+
+
+  
 
 
 
 
 
-
+  
 
 
 
 
     
     
-    <link rel="canonical" href="http://localhost:4000/about.html">
+    <link rel="canonical" href="http://localhost:4000/2022/11/17/R2022.46.html">
     
     
     
@@ -140,9 +146,9 @@
         <section class="page-header">
             <h1 class="project-name">Mammoth release notes</h1>
             <!-- 
-            <h1 class="project-name">About</h1>
+            <h1 class="project-name">Release version 2022.46</h1>
               -->
-            <!-- <h2 class="project-tagline">A few more words about this theme</h2> -->
+            <!-- <h2 class="project-tagline"></h2> -->
             <!-- Post tagline -->
             
             <!-- End: Post tagline -->
@@ -186,11 +192,51 @@
 <article class="right-section">
 
   <div>
-    <p>This is the <em>Cayman Blog</em> Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: <a href="https://github.com/lorepirri/cayman-blog">cayman-blog</a></p>
+    <h2 id="product-updates"><strong>PRODUCT UPDATES:</strong></h2>
 
-<p>You can find the source code for <em>Jekyll</em> at <a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<h3 id="enhancement"><strong>Enhancement:</strong></h3>
+<p>1.Salesforce integration support for sandbox salesforce domain:
+  Salesforce supports only main domain of salesforce.Now we are allowing the user to use it for custom domains too .</p>
 
-<p><a href="http://localhost:4000/">Go to the Home Page</a></p>
+<p>2.In 3P connectors, allow for latest batch pull to replace existing batch data in Mammoth:
+  Mammoth allows for incremental data pull based on unique sequence column.However, the data that is pulled is kept in combine mode where every pull creates a new batch of data.Now besides the option to create a new batch, we are allowing the user an option to replace the data with the new increment.
+  This reduces the amount of data stored in Mammoth and avoids redundant processing.</p>
+
+<h3 id="bug-fixes"><strong>Bug fixes:</strong></h3>
+<p>These were the bugs detected and they’ve now been fixed -</p>
+
+<p>1.Pipeline was showing loader and preventing access to task menu.</p>
+
+<p>2.Error column was showing up in column selection field of the task after copy pasting a task.</p>
+
+<p>3.Canceling a function was showing inocorrect data types in a specific scenario.</p>
+
+<p>4.Format not handled correctly for numeric columns.</p>
+
+<p>5.Multiple issues was there in Search bar on landing page.</p>
+
+<p>6.A file with unambigous date column was asking  for user input.</p>
+
+<p>7.Pending update summary should show right details including right DS and view name details in the summary.</p>
+
+<p>8.Data library was showing up under reports when user switches the account.</p>
+
+<p>9.A file was showing empty grid.</p>
+
+<p>10.Defult numeric format(comma) was showing up in crosstab.</p>
+
+<p>11.Column format was not correct for dataset and batch data.</p>
+
+<p>12.Column to rows rule - Formatting didn’t get apply when date columns are used in Values column.</p>
+
+<p>13.Last row was not visible in the grid .</p>
+
+<h3 id="internal-improvements"><strong>Internal Improvements:</strong></h3>
+
+<p>1.Data passthrough backend work is now complete.</p>
+
+<p>2.We have converted snowflake from cdata driver to python connector to work for large data.The large data get used to stuck while creating the database.With this change
+  we can pull the data within seconds.</p>
 
   </div>
 
@@ -231,11 +277,51 @@
 <article class="right-section">
 
   <div>
-    <p>This is the <em>Cayman Blog</em> Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: <a href="https://github.com/lorepirri/cayman-blog">cayman-blog</a></p>
+    <h2 id="product-updates"><strong>PRODUCT UPDATES:</strong></h2>
 
-<p>You can find the source code for <em>Jekyll</em> at <a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<h3 id="enhancement"><strong>Enhancement:</strong></h3>
+<p>1.Salesforce integration support for sandbox salesforce domain:
+  Salesforce supports only main domain of salesforce.Now we are allowing the user to use it for custom domains too .</p>
 
-<p><a href="http://localhost:4000/">Go to the Home Page</a></p>
+<p>2.In 3P connectors, allow for latest batch pull to replace existing batch data in Mammoth:
+  Mammoth allows for incremental data pull based on unique sequence column.However, the data that is pulled is kept in combine mode where every pull creates a new batch of data.Now besides the option to create a new batch, we are allowing the user an option to replace the data with the new increment.
+  This reduces the amount of data stored in Mammoth and avoids redundant processing.</p>
+
+<h3 id="bug-fixes"><strong>Bug fixes:</strong></h3>
+<p>These were the bugs detected and they’ve now been fixed -</p>
+
+<p>1.Pipeline was showing loader and preventing access to task menu.</p>
+
+<p>2.Error column was showing up in column selection field of the task after copy pasting a task.</p>
+
+<p>3.Canceling a function was showing inocorrect data types in a specific scenario.</p>
+
+<p>4.Format not handled correctly for numeric columns.</p>
+
+<p>5.Multiple issues was there in Search bar on landing page.</p>
+
+<p>6.A file with unambigous date column was asking  for user input.</p>
+
+<p>7.Pending update summary should show right details including right DS and view name details in the summary.</p>
+
+<p>8.Data library was showing up under reports when user switches the account.</p>
+
+<p>9.A file was showing empty grid.</p>
+
+<p>10.Defult numeric format(comma) was showing up in crosstab.</p>
+
+<p>11.Column format was not correct for dataset and batch data.</p>
+
+<p>12.Column to rows rule - Formatting didn’t get apply when date columns are used in Values column.</p>
+
+<p>13.Last row was not visible in the grid .</p>
+
+<h3 id="internal-improvements"><strong>Internal Improvements:</strong></h3>
+
+<p>1.Data passthrough backend work is now complete.</p>
+
+<p>2.We have converted snowflake from cdata driver to python connector to work for large data.The large data get used to stuck while creating the database.With this change
+  we can pull the data within seconds.</p>
 
   </div>
 
