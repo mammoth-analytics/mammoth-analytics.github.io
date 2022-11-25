@@ -43,6 +43,23 @@ a.btn.pull-right.link:hover {
 .entry-title {
     margin-top: 0px !important;
 }
-.book.with-summary .book-body .book-header {
+.book .book-body .book-header {
     box-shadow: 0 4px 40px rgb(0 0 0 / 8%);
+}
+.markdown-section ol, .markdown-section ul {
+    padding-left: 3em;
+}
+@media screen and (max-width: 768px) {
+    a.btn.pull-right.link {
+        font-size: 14px;
+    }
+    .book-header .btn {
+        padding: 0 12px;
+    }
+    .markdown-section h1 {
+        font-size: 22px;
+    }
+    .markdown-section b, .markdown-section strong {
+        font-size: 20px;
+    }
 }
