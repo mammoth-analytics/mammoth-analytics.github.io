@@ -4,10 +4,10 @@ permalink: /
 ---
 
 <style>
-p {
+p, h1 {
   display:none;
   }
-.entry-content p {
+.entry-content p, h1.entry-title {
   display: block !important;
 }
 </style>
