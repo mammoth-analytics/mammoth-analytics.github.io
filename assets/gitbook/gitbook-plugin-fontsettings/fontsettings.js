@@ -11,33 +11,33 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     var THEMES = [
         {
             config: 'white',
-            text: 'White',
+            text: 'Light theme',
             id: 0
         },
-        {
-            config: 'sepia',
-            text: 'Sepia',
-            id: 1
-        },
+        // {
+        //     config: 'sepia',
+        //     text: 'Sepia',
+        //     id: 1
+        // },
         {
             config: 'night',
-            text: 'Night',
+            text: 'Dark theme',
             id: 2
         }
     ];
 
     // Default font families
     var FAMILIES = [
-        {
-            config: 'serif',
-            text: 'Serif',
-            id: 0
-        },
-        {
-            config: 'sans',
-            text: 'Sans',
-            id: 1
-        }
+        // {
+        //     config: 'serif',
+        //     text: 'Serif',
+        //     id: 0
+        // },
+        // {
+        //     config: 'sans',
+        //     text: 'Sans',
+        //     id: 1
+        // }
     ];
 
     // Return configured themes
