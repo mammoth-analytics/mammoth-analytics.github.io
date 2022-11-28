@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family:'Aeonik';
+    src: url('fonts/AeonikTRIAL-Regular.otf');
+}
+
+.book.font-family-1, .book-summary {
+    font-family: Aeonik !important;
+}
 .book-summary ul.summary li.chapter.active ul{
     display: none;
 }
