@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-02T16:28:48+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-02T16:52:00+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>Mammoth</name></author><entry><title type="html">Release note 2022-11-24</title><link href="http://localhost:4000/2022-11-24-release.html" rel="alternate" type="text/html" title="Release note 2022-11-24" /><published>2022-11-24T00:00:00+05:30</published><updated>2022-11-24T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-24-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="support-for-join-with-different-column-types">Support for join with different column types.</h4>
@@ -9,7 +9,7 @@ is done, Mammoth internally casts the joined key column to the expected type.</p
 <h4 id="support-for-single-sign-on">Support for Single sign on</h4>
 <p>Mammoth now support its customers to sign in with Google besides email and password based authentication.</p>
 
-<h3 id="bug-fixes">Bug fixes</h3>
+<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
   <li>Rectified a few issues when ordering tasks in pipeline</li>
@@ -26,7 +26,7 @@ in auto run off mode</li>
   <li>Pasting crosstab task was showing incorrect name i.e branchout in the pipeline.</li>
   <li>Branch out - Dataset name was not showing up when opened to edit the action in auto-run off mode.</li>
   <li>After OAuth type identity creation, Mammoth navigates to the file uploads tab instead of respective integration.</li>
-</ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release note 2022-11-16</title><link href="http://localhost:4000/2022-11-16-release.html" rel="alternate" type="text/html" title="Release note 2022-11-16" /><published>2022-11-16T00:00:00+05:30</published><updated>2022-11-16T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-16-release.html"><![CDATA[<h3 id="bug-fixes">Bug fixes</h3>
+</ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release note 2022-11-16</title><link href="http://localhost:4000/2022-11-16-release.html" rel="alternate" type="text/html" title="Release note 2022-11-16" /><published>2022-11-16T00:00:00+05:30</published><updated>2022-11-16T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-16-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
 <ul>
   <li>In/out icons were not looking right</li>
   <li>Link Pointer was showing up when alerts are disabled</li>
@@ -35,4 +35,4 @@ in auto run off mode</li>
   <li>Extract text rule -The space was not enough to enter long expression</li>
   <li>Dataflow graph was showing up at unwanted places</li>
   <li>There were no tooltip for long column name</li>
-</ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Bug fixes In/out icons were not looking right Link Pointer was showing up when alerts are disabled SFTP logo was missing in export area Folder/Label name was going out of bound Extract text rule -The space was not enough to enter long expression Dataflow graph was showing up at unwanted places There were no tooltip for long column name]]></summary></entry></feed>
+</ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes In/out icons were not looking right Link Pointer was showing up when alerts are disabled SFTP logo was missing in export area Folder/Label name was going out of bound Extract text rule -The space was not enough to enter long expression Dataflow graph was showing up at unwanted places There were no tooltip for long column name]]></summary></entry></feed>
