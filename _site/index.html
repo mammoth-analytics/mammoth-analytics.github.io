@@ -95,6 +95,17 @@
                             
                         </li>
                     
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2022-12-29-release.html">
+                        
+                            <a href="/2022-12-29-release.html">
+                                Release 2022.52
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
 
                     
                         <!-- <li class="divider"></li> -->
@@ -149,28 +160,43 @@ p, h1 {
         <h1 class="entry-title">
             
             
-                Release 2022.50
+                Release 2022.52
             
             </h1>
-            <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
+            <div class="entry-content"><h3 id="enhancement">Enhancement</h3>
 
-<h4 id="show-original-column-names">Show original column names.</h4>
-<p>If a column is renamed in a View, it is difficult to find the original name. Mammoth now shows the original name in the column header on hover.</p>
+<h4 id="add-flexibility-to-showhide-joins-and-views-in-dataflow-map">Add flexibility to show/hide joins and views in dataflow map</h4>
+<p>Mammoth now added checkboxes to the dataflow map that allow you to show or hide joins and barren views(views with no children)
+This allows users to customize the visualization of the dataflow according to their specific needs.”</p>
 
 <h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>Apply Filter - Second column name does not appear in function panel and task description.</li>
-  <li>Navbar is not fixed in settings page.It moves on scroll.</li>
-  <li>Publish rerun request never finishes.</li>
-  <li>Batch column section in preview panel- Cancel button overlaps the text.</li>
-  <li>File upload modal- Close icon shows incorrect tooltip message.</li>
+  <li>The export action does not auto-run on the data updates</li>
 </ul>
 
-<h3 id="api-modifications">API modifications</h3>
+<h3 id="internal-improvements">Internal Improvements</h3>
+
 <ul>
-  <li>Modification request tracker mechanism has been deprecated and the functionality for this has moved to future request service.</li>
+  <li>Mammoth has updated the Cdata driver versions for the following connectors-
+    <ul>
+      <li>Xero</li>
+      <li>Facebook Ads</li>
+      <li>Salesforce</li>
+      <li>Hubspot</li>
+      <li>Google Ads</li>
+      <li>Mailchimp</li>
+      <li>Parquet</li>
+      <li>Sendgrid</li>
+      <li>Shopify</li>
+      <li>Zoom</li>
+      <li>Google Analytics 4</li>
+      <li>Sharepoint</li>
+      <li>Google sheet</li>
+    </ul>
+  </li>
 </ul>
+
 </div>
     </body>
 </html>
@@ -310,7 +336,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2022-12-14 11:12:13 +0530"
+        "time": "2022-12-29 15:21:13 +0530"
     },
     "basePath": "",
     "book": {
