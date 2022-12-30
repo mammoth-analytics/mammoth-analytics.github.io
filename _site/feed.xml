@@ -1,37 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-29T15:21:13+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2022.52</title><link href="http://localhost:4000/2022-12-29-release.html" rel="alternate" type="text/html" title="Release 2022.52" /><published>2022-12-29T00:00:00+05:30</published><updated>2022-12-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-29-release.html"><![CDATA[<h3 id="enhancement">Enhancement</h3>
-
-<h4 id="add-flexibility-to-showhide-joins-and-views-in-dataflow-map">Add flexibility to show/hide joins and views in dataflow map</h4>
-<p>Mammoth now added checkboxes to the dataflow map that allow you to show or hide joins and barren views(views with no children)
-This allows users to customize the visualization of the dataflow according to their specific needs.”</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-30T11:55:03+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2022.52</title><link href="http://localhost:4000/2022-12-29-release.html" rel="alternate" type="text/html" title="Release 2022.52" /><published>2022-12-29T00:00:00+05:30</published><updated>2022-12-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-29-release.html"><![CDATA[<h3 id="defect-fix">Defect fix</h3>
 
 <ul>
-  <li>The export action does not auto-run on the data updates</li>
-</ul>
-
-<h3 id="internal-improvements">Internal Improvements</h3>
-
-<ul>
-  <li>Mammoth has updated the Cdata driver versions for the following connectors-
-    <ul>
-      <li>Xero</li>
-      <li>Facebook Ads</li>
-      <li>Salesforce</li>
-      <li>Hubspot</li>
-      <li>Google Ads</li>
-      <li>Mailchimp</li>
-      <li>Parquet</li>
-      <li>Sendgrid</li>
-      <li>Shopify</li>
-      <li>Zoom</li>
-      <li>Google Analytics 4</li>
-      <li>Sharepoint</li>
-      <li>Google sheet</li>
-    </ul>
-  </li>
-</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancement]]></summary></entry><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+  <li>In some scenarios,the export task would not run by itself on data updates.This has been fixed now.</li>
+</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fix]]></summary></entry><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="show-original-column-names">Show original column names.</h4>
 <p>If a column is renamed in a View, it is difficult to find the original name. Mammoth now shows the original name in the column header on hover.</p>
