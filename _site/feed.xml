@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-14T11:12:13+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-20T12:00:26+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="show-original-column-names">Show original column names.</h4>
@@ -9,14 +9,14 @@
 <ul>
   <li>Apply Filter - Second column name does not appear in function panel and task description.</li>
   <li>Navbar is not fixed in settings page.It moves on scroll.</li>
-  <li>Publish rerun request never finishes.</li>
+  <li>Publish to DB - Continuous loader on rerun .</li>
   <li>Batch column section in preview panel- Cancel button overlaps the text.</li>
   <li>File upload modal- Close icon shows incorrect tooltip message.</li>
 </ul>
 
 <h3 id="api-modifications">API modifications</h3>
 <ul>
-  <li>Modification request tracker mechanism has been deprecated and the functionality for this has moved to future request service.</li>
+  <li>Modification request tracker mechanism has been removed and the functionality for this has moved to future request service.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.49</title><link href="http://localhost:4000/2022-12-07-release.html" rel="alternate" type="text/html" title="Release 2022.49" /><published>2022-12-07T00:00:00+05:30</published><updated>2022-12-07T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-07-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="provide-support-for-appendreplace-options-in-sftp-pulls-based-on-date-patterns-in-file-names">Provide support for append/replace options in SFTP pulls based on date patterns in file names.</h4>
@@ -65,4 +65,24 @@ in auto run off mode</li>
   <li>Pasting crosstab task was showing incorrect name i.e branchout in the pipeline.</li>
   <li>Branch out - Dataset name was not showing up when opened to edit the action in auto-run off mode.</li>
   <li>After OAuth type identity creation, Mammoth navigates to the file uploads tab instead of respective integration.</li>
-</ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
+</ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.46</title><link href="http://localhost:4000/2022-11-17-release.html" rel="alternate" type="text/html" title="Release 2022.46" /><published>2022-11-17T00:00:00+05:30</published><updated>2022-11-17T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-17-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="salesforce-integration-support-for-sandbox-salesforce-domain">Salesforce integration support for sandbox salesforce domain.</h4>
+<p>In Mammoth Salesforce does support custom domains in addition to the main salesforce.com domain.</p>
+
+<h4 id="in-3p-connectors-allow-for-latest-batch-pull-to-replace-existing-batch-data-in-mammoth">In 3P connectors, allow for latest batch pull to replace existing batch data in Mammoth.</h4>
+<p>Mammoth allows for incremental data pull based on unique sequence column.However, the data that is pulled is kept in combine mode where every pull creates a new batch of data.Now besides the option to create a new batch, Mammoth is allowing the user an option to replace the data with the new increment.This reduces the amount of data stored in Mammoth and avoids redundant processing</p>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Pipeline shows loader and preventing access to task menu.</li>
+  <li>Error column shows up in column selection field of the task after copy pasting a task.</li>
+  <li>Canceling a function shows inocorrect data types in a specific scenario.</li>
+  <li>Format not handled correctly for numeric columns.</li>
+  <li>Multiple issues in Search bar on account landing.</li>
+  <li>A file with unambigous date column asks for user input.</li>
+  <li>Pending update summary doesn’t show right details.</li>
+  <li>Data library shows up under reports when user switches the account.</li>
+  <li>A file is showing empty grid.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
