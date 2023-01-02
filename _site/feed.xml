@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-14T11:12:13+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-02T15:46:00+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.01</title><link href="http://localhost:4000/2023-01-02-release.html" rel="alternate" type="text/html" title="Release 2023.01" /><published>2023-01-02T00:00:00+05:30</published><updated>2023-01-02T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-01-02-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Column browser was enabled when there was a pipeline error.</li>
+  <li>Pipeline in error -Tooltip message was not showing up on hover for disabled items.</li>
+  <li>Appropriate error message was not appearing when user tries to delete foreign view.</li>
+  <li>Data type was not visible for long column name in report.</li>
+</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="show-original-column-names">Show original column names.</h4>
 <p>If a column is renamed in a View, it is difficult to find the original name. Mammoth now shows the original name in the column header on hover.</p>
@@ -9,14 +16,14 @@
 <ul>
   <li>Apply Filter - Second column name does not appear in function panel and task description.</li>
   <li>Navbar is not fixed in settings page.It moves on scroll.</li>
-  <li>Publish rerun request never finishes.</li>
+  <li>Publish to DB - Continuous loader on rerun .</li>
   <li>Batch column section in preview panel- Cancel button overlaps the text.</li>
   <li>File upload modal- Close icon shows incorrect tooltip message.</li>
 </ul>
 
 <h3 id="api-modifications">API modifications</h3>
 <ul>
-  <li>Modification request tracker mechanism has been deprecated and the functionality for this has moved to future request service.</li>
+  <li>Modification request tracker mechanism has been removed and the functionality for this has moved to future request service.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.49</title><link href="http://localhost:4000/2022-12-07-release.html" rel="alternate" type="text/html" title="Release 2022.49" /><published>2022-12-07T00:00:00+05:30</published><updated>2022-12-07T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-07-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="provide-support-for-appendreplace-options-in-sftp-pulls-based-on-date-patterns-in-file-names">Provide support for append/replace options in SFTP pulls based on date patterns in file names.</h4>
