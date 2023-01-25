@@ -107,10 +107,43 @@
                         </li>
                     
                         
+                        <li class="chapter" data-level="1.1" data-path="/2022-12-22-release.html">
+                        
+                            <a href="/2022-12-22-release.html">
+                                Release 2022.51
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2022-12-29-release.html">
+                        
+                            <a href="/2022-12-29-release.html">
+                                Release 2022.52
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
                         <li class="chapter" data-level="1.1" data-path="/2023-01-02-release.html">
                         
                             <a href="/2023-01-02-release.html">
                                 Release 2023.01
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-01-25-release.html">
+                        
+                            <a href="/2023-01-25-release.html">
+                                Release 2023.04
                             </a>
                             
                                 
@@ -171,18 +204,28 @@ p, h1 {
         <h1 class="entry-title">
             
             
-                Release 2023.01
+                Release 2023.04
             
             </h1>
-            <div class="entry-content"><h3 id="defect-fixes">Defect fixes</h3>
+            <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
+
+<h4 id="third-party-connector-postgresqlmssql---allow-selection-of-tables-from-different-schemas">Third party connector PostgreSQL,MSSQL - Allow selection of tables from different schemas</h4>
+<p>Mammoth now enables the selection of tables with their corresponding schema under the database. It presents a list of available schemas and then lists the tables under each schema, making it easier to navigate and access the desired tables.</p>
+
+<h4 id="improved-positoning-of-data-library-line-items">Improved positoning of data library line items</h4>
+<p>Mammoth has made significant improvements to its landing page, including the addition of an informative “Info” section for datasets and a more organized layout for line items.</p>
+
+<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>Column browser was enabled when there was a pipeline error.</li>
-  <li>Pipeline in error -Tooltip message was not showing up on hover for disabled items.</li>
-  <li>Appropriate error message was not appearing when user tries to delete foreign view.</li>
-  <li>Data type was not visible for long column name in report.</li>
+  <li>We have resolved the issue with the random refresh on Dataview pages.</li>
+  <li>The editing of the lookup rule is displaying an error regarding an invalid column name.</li>
+  <li>The simultaneous addition of multiple files has caused the dataset to become stuck in a processing state.</li>
+  <li>In a specific scenario, the Branchout/Crosstab tasks were not appearing within the pipeline.</li>
+  <li>When new batch will come in and dataset auto sync is off,The new batch goes in sync pending state.</li>
+  <li>Webhook creation feature was missing from home page.</li>
+  <li>Lookup task description was not showing up in the pipeline.</li>
 </ul>
-
 </div>
     </body>
 </html>
@@ -322,7 +365,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-01-02 15:46:00 +0530"
+        "time": "2023-01-25 15:33:45 +0530"
     },
     "basePath": "",
     "book": {

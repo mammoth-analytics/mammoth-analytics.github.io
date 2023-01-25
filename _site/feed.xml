@@ -1,12 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-02T15:46:00+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.01</title><link href="http://localhost:4000/2023-01-02-release.html" rel="alternate" type="text/html" title="Release 2023.01" /><published>2023-01-02T00:00:00+05:30</published><updated>2023-01-02T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-01-02-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-25T15:33:45+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.04</title><link href="http://localhost:4000/2023-01-25-release.html" rel="alternate" type="text/html" title="Release 2023.04" /><published>2023-01-25T00:00:00+05:30</published><updated>2023-01-25T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-01-25-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="third-party-connector-postgresqlmssql---allow-selection-of-tables-from-different-schemas">Third party connector PostgreSQL,MSSQL - Allow selection of tables from different schemas</h4>
+<p>Mammoth now enables the selection of tables with their corresponding schema under the database. It presents a list of available schemas and then lists the tables under each schema, making it easier to navigate and access the desired tables.</p>
+
+<h4 id="improved-positoning-of-data-library-line-items">Improved positoning of data library line items</h4>
+<p>Mammoth has made significant improvements to its landing page, including the addition of an informative “Info” section for datasets and a more organized layout for line items.</p>
+
+<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>Column browser was enabled when there was a pipeline error.</li>
-  <li>Pipeline in error -Tooltip message was not showing up on hover for disabled items.</li>
-  <li>Appropriate error message was not appearing when user tries to delete foreign view.</li>
-  <li>Data type was not visible for long column name in report.</li>
-</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+  <li>We have resolved the issue with the random refresh on Dataview pages.</li>
+  <li>The editing of the lookup rule is displaying an error regarding an invalid column name.</li>
+  <li>The simultaneous addition of multiple files has caused the dataset to become stuck in a processing state.</li>
+  <li>In a specific scenario, the Branchout/Crosstab tasks were not appearing within the pipeline.</li>
+  <li>When new batch will come in and dataset auto sync is off,The new batch goes in sync pending state.</li>
+  <li>Webhook creation feature was missing from home page.</li>
+  <li>Lookup task description was not showing up in the pipeline.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.01</title><link href="http://localhost:4000/2023-01-02-release.html" rel="alternate" type="text/html" title="Release 2023.01" /><published>2023-01-02T00:00:00+05:30</published><updated>2023-01-02T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-01-02-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>The column browser should stay disabled when the pipeline has an error. This has been fixed now.</li>
+  <li>Added tooltip messages for disabled items when the pipeline is in error.</li>
+  <li>Added an error message when the user tries to delete a View which has been used in a join rule elsewhere.</li>
+  <li>When the column name is long, the data type is not visible in the Report. This has been fixed.</li>
+</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2022.52</title><link href="http://localhost:4000/2022-12-29-release.html" rel="alternate" type="text/html" title="Release 2022.52" /><published>2022-12-29T00:00:00+05:30</published><updated>2022-12-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-29-release.html"><![CDATA[<h3 id="defect-fix">Defect fix</h3>
+
+<ul>
+  <li>In some scenarios,the export task would not run by itself on data updates.This has been fixed now.</li>
+</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fix]]></summary></entry><entry><title type="html">Release 2022.51</title><link href="http://localhost:4000/2022-12-22-release.html" rel="alternate" type="text/html" title="Release 2022.51" /><published>2022-12-22T00:00:00+05:30</published><updated>2022-12-22T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-22-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="mammoth-now-supports-duplicating-views-when-duplicating-datasets">Mammoth now supports duplicating Views when duplicating Datasets.</h4>
+<p>When a user duplicates a data source,now they can choose to duplicate the data itself as well as any views and pipelines associated with the data source. This can save time and effort by allowing users to quickly create copies of existing data sources and their associated views and pipelines.</p>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Clicking on the Mammoth icon opened the root folder in the Data Library. Now the Dataset name is clickable and opens the folder in  which the Dataset exists. Clicking on the Mammoth icon continues to open the root folder.</li>
+  <li>Reset the view throws incorrect notification.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="show-original-column-names">Show original column names.</h4>
 <p>If a column is renamed in a View, it is difficult to find the original name. Mammoth now shows the original name in the column header on hover.</p>
@@ -74,22 +106,21 @@ in auto run off mode</li>
   <li>After OAuth type identity creation, Mammoth navigates to the file uploads tab instead of respective integration.</li>
 </ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.46</title><link href="http://localhost:4000/2022-11-17-release.html" rel="alternate" type="text/html" title="Release 2022.46" /><published>2022-11-17T00:00:00+05:30</published><updated>2022-11-17T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-17-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
-<h4 id="salesforce-integration-support-for-sandbox-salesforce-domain">Salesforce integration support for sandbox salesforce domain.</h4>
-<p>In Mammoth Salesforce does support custom domains in addition to the main salesforce.com domain.</p>
+<h4 id="support-for-custom-domains-for-salesforce-integration">Support for custom domains for Salesforce integration.</h4>
+<p>Mammoth now supports salesforce sign-in for custom domains besides the main salesforce domain.</p>
 
-<h4 id="in-3p-connectors-allow-for-latest-batch-pull-to-replace-existing-batch-data-in-mammoth">In 3P connectors, allow for latest batch pull to replace existing batch data in Mammoth.</h4>
-<p>Mammoth allows for incremental data pull based on unique sequence column.However, the data that is pulled is kept in combine mode where every pull creates a new batch of data.Now besides the option to create a new batch, Mammoth is allowing the user an option to replace the data with the new increment.This reduces the amount of data stored in Mammoth and avoids redundant processing</p>
+<h4 id="third-party-connectors-in-mammoth-now-allow-for-replacing-data-in-the-dataset-with-new-rows-of-data-in-the-remote-data-store">Third-party connectors in Mammoth now allow for replacing data in the dataset with new rows of data in the remote data store.</h4>
+<p>If you have a table in your database to which rows are added periodically and you want to process only the latest rows in Mammoth, you can do this now. Earlier you could pull the latest rows in Mammoth but you would keep all in Mammoth (using the Combine mode in data pulls). Now, Mammoth allows you to pull the latest batch of data in the remote table in replace mode.</p>
 
 <h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>Pipeline shows loader and preventing access to task menu.</li>
+  <li>In some scenarios Pipeline in a View would show loader thus preventing access to the task Menu. This is now resolved.</li>
   <li>Error column shows up in column selection field of the task after copy pasting a task.</li>
   <li>Canceling a function shows inocorrect data types in a specific scenario.</li>
   <li>Format not handled correctly for numeric columns.</li>
   <li>Multiple issues in Search bar on account landing.</li>
   <li>A file with unambigous date column asks for user input.</li>
   <li>Pending update summary doesn’t show right details.</li>
-  <li>Data library shows up under reports when user switches the account.</li>
   <li>A file is showing empty grid.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
