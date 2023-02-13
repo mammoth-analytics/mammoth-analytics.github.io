@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-06T12:27:09+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.06</title><link href="http://localhost:4000/2023-02-06-release.html" rel="alternate" type="text/html" title="Release 2023.06" /><published>2023-02-06T00:00:00+05:30</published><updated>2023-02-06T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-02-06-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-11T12:57:46+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.07</title><link href="http://localhost:4000/2023-02-11-release.html" rel="alternate" type="text/html" title="Release 2023.07" /><published>2023-02-11T00:00:00+05:30</published><updated>2023-02-11T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-02-11-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="support-for-stored-procedures-in-salesforce">Support for Stored Procedures in Salesforce</h4>
+<p>Mammoth now enables users to execute queries using stored procedures in the query box.</p>
+
+<h4 id="improved-messages-in-add-data-modal">Improved messages in Add Data modal.</h4>
+<p>Mammoth has enhanced the messaging for the components like My computer, Webhooks, etc under Add Data modal.</p>
+
+<h4 id="enhanced-explore-card-performance">Enhanced Explore card performance</h4>
+<p>Mammoth has significantly improved its performance when opening multiple Explore Cards. Opening more than 50 Explore Cards should now take no longer than two minutes.</p>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Resolved an error that was appearing in the console due to a Join rule.</li>
+  <li>Added a message to display when there are duplicate column names in the query result for Postgres and Redshift.</li>
+  <li>Fixed a bug where the warning modal was not appearing after editing a query for an existing dataset for third-party connectors.</li>
+  <li>Resolved UI issues in the Third-Party Connector for Data Addition.</li>
+  <li>Stabilized the movement of the navigation bar when scrolling up or down.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.06</title><link href="http://localhost:4000/2023-02-06-release.html" rel="alternate" type="text/html" title="Release 2023.06" /><published>2023-02-06T00:00:00+05:30</published><updated>2023-02-06T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-02-06-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="new-data-addition-modal">New Data addition modal</h4>
 <p>Migrated existing APIs &amp; Databases tab to Vue for improved UI for adding data through File, Webhook, URL, and Third-Party connectors.</p>
@@ -8,8 +27,8 @@
 
 <ul>
   <li>Fixed Sharepoint dataset creation and loader display issue.</li>
-  <li>Renaming of view was showing a red border and a message in red color for the existing view name.</li>
-  <li>Fixed missing progress modal when changes applied in draft mode.</li>
+  <li>Fixed an issue where renaming a View would show error motifs for a legitimate case.</li>
+  <li>Fixed the missing progress modal when changes are applied in draft mode.</li>
   <li>Fixed an alignment issue in Branchout to dataset.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.04</title><link href="http://localhost:4000/2023-01-25-release.html" rel="alternate" type="text/html" title="Release 2023.04" /><published>2023-01-25T00:00:00+05:30</published><updated>2023-01-25T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-01-25-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
@@ -135,13 +154,4 @@ in auto run off mode</li>
   <li>A file with unambigous date column asks for user input.</li>
   <li>Pending update summary doesn’t show right details.</li>
   <li>A file is showing empty grid.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.44</title><link href="http://localhost:4000/2022-11-02-release.html" rel="alternate" type="text/html" title="Release 2022.44" /><published>2022-11-02T00:00:00+05:30</published><updated>2022-11-02T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-02-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>Fixed missing “Publish as View” option in pipeline.</li>
-  <li>Fixed an issue where “Convert Column” rule was returning blank value in all columns.</li>
-  <li>Improved “Create CSV Link” to prevent multiple task creation in pipeline with multiple clicks.</li>
-  <li>Removed Data Library search bar from expired account screen.</li>
-  <li>Enabled applying multiple tasks and “Publish to DB/Publish to View” simultaneously.</li>
-  <li>Fixed unclickable “Tasks 3 dot menu” in pipeline.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry></feed>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
