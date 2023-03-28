@@ -1,5 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-20T17:38:11+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.07</title><link href="http://localhost:4000/2023-02-13-release.html" rel="alternate" type="text/html" title="Release 2023.07" /><published>2023-02-13T00:00:00+05:30</published><updated>2023-02-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-02-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-23T16:30:39+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.12</title><link href="http://localhost:4000/2023-03-23-release.html" rel="alternate" type="text/html" title="Release 2023.12" /><published>2023-03-23T00:00:00+05:30</published><updated>2023-03-23T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-03-23-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Addressed an issue with the window function not working correctly when used with a date column, resulting in the same column being produced.</li>
+  <li>Resolved an issue where creating a new branchout and sending data from multiple views resulted in duplicate datasets being created.</li>
+  <li>Third-party connector modal - Fixed an issue where Zoom OAuth redirection gave an error when the browser was already logged in for Zoom.</li>
+  <li>Addressed an issue where folder deletion was showing a loader.</li>
+  <li>Fixed an error that was appearing in the console due to a Join rule.</li>
+  <li>Resolved an issue where an error icon was shown while creating the BigQuery export action.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.10</title><link href="http://localhost:4000/2023-03-11-release.html" rel="alternate" type="text/html" title="Release 2023.10" /><published>2023-03-11T00:00:00+05:30</published><updated>2023-03-11T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-03-11-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="smart-combine-on-big-query-is-now-available-as-an-alpha-feature-on-request">Smart combine on Big Query is now available as an alpha feature (on request)</h4>
+<ul>
+  <li>Now, users can remove and edit a BigQuery service file in the export section. Also, multiple service files can be added.</li>
+  <li>Introduced a feature called Smart combine. This allows users to merge new data into an existing exported table. If the same set of key columns is reported, the corresponding values are updated. If a new set of key columns come in, they are now added to the table. Supported on Big Query.</li>
+</ul>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Resolved an issue where the BigQuery table name was not displayed in error notifications.</li>
+  <li>Fixed an issue in the dropdown for the Unique sequence column in the Connectors modal where the names of the column in the list were missing column type suffixes.</li>
+  <li>Resolved a problem where SFTP took too long to list files.</li>
+  <li>Addresses an issue in the Edit Query Modal that prevented it from opening or displaying older datasets without continuous loading.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.09</title><link href="http://localhost:4000/2023-03-01-release.html" rel="alternate" type="text/html" title="Release 2023.09" /><published>2023-03-01T00:00:00+05:30</published><updated>2023-03-01T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-03-01-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="mammoth-now-warns-if-there-are-duplicate-values-in-the-joined-key-column-in-the-join-rule">Mammoth now warns if there are duplicate values in the joined key column in the Join rule</h4>
+<p>Mammoth now warns if there are non-unique values in the key column of the joined View. This is useful when the raw data or blended data is expected to have unique values but due to some flaws in the process, there are duplicated keys resulting in erroneous end results. This warning would help catch such issues early.</p>
+
+<h4 id="back-button-for-data-addition-modals">Back Button for Data Addition Modals</h4>
+<p>Data addition modals now have a back button that redirects to the main menu.</p>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Addressed the issue where pipeline rules were being modified unexpectedly when changing the foreign view in join.</li>
+  <li>Resolved the issue where window function sort was becoming undefined upon duplicating the view.</li>
+  <li>Fixed the issue of column names not being generated correctly when changing data settings for CSV files in the file processor.</li>
+  <li>Resolved the issue where Apply template was not working on views.</li>
+  <li>Connectors Modal: Fixed the issue of Text type columns being listed in the unique sequence column dropdown.</li>
+  <li>Connectors Modal: Schedule option was erroneously showing up for connectors where this is not applicable. This has been fixed.</li>
+  <li>Fixed the issue where user with no account would see a loader after sign in.</li>
+  <li>When a Branch Out Task is suspended or deleted, Mammoth deletes the contributed batch in the branched-out Dataset. This is also the behaviour now when a View containing such a Branch Out task is deleted or reset.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.08</title><link href="http://localhost:4000/2023-02-21-release.html" rel="alternate" type="text/html" title="Release 2023.08" /><published>2023-02-21T00:00:00+05:30</published><updated>2023-02-21T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-02-21-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="mongodb-connector">MongoDB Connector</h4>
+<p>Mammoth now includes the MongoDB connector using the cdata driver version 22.0.8389.</p>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>The folder breadcrumbs have been reorganized to improve navigation.</li>
+  <li>The column browser selection previously experienced scrolling lag and selection issues. These issues have been resolved.</li>
+  <li>Resolved an issue with third party connectors where it was possible for users to create an existing identity multiple times while editing another connection.</li>
+  <li>The issue where deleting a View in a Dataset with multiple Views caused another View to disappear has been fixed.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.07</title><link href="http://localhost:4000/2023-02-13-release.html" rel="alternate" type="text/html" title="Release 2023.07" /><published>2023-02-13T00:00:00+05:30</published><updated>2023-02-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-02-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="support-for-stored-procedures-in-salesforce">Support for Stored Procedures in Salesforce</h4>
 <p>Users can now execute stored procedure queries in the query box.</p>
@@ -69,89 +124,4 @@
 <ul>
   <li>Clicking on the Mammoth icon opened the root folder in the Data Library. Now the Dataset name is clickable and opens the folder in  which the Dataset exists. Clicking on the Mammoth icon continues to open the root folder.</li>
   <li>Reset the view throws incorrect notification.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.50</title><link href="http://localhost:4000/2022-12-13-release.html" rel="alternate" type="text/html" title="Release 2022.50" /><published>2022-12-13T00:00:00+05:30</published><updated>2022-12-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h4 id="show-original-column-names">Show original column names.</h4>
-<p>If a column is renamed in a View, it is difficult to find the original name. Mammoth now shows the original name in the column header on hover.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>Apply Filter - Second column name does not appear in function panel and task description.</li>
-  <li>Navbar is not fixed in settings page.It moves on scroll.</li>
-  <li>Publish to DB - Continuous loader on rerun .</li>
-  <li>Batch column section in preview panel- Cancel button overlaps the text.</li>
-  <li>File upload modal- Close icon shows incorrect tooltip message.</li>
-</ul>
-
-<h3 id="api-modifications">API modifications</h3>
-<ul>
-  <li>Modification request tracker mechanism has been removed and the functionality for this has moved to future request service.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.49</title><link href="http://localhost:4000/2022-12-07-release.html" rel="alternate" type="text/html" title="Release 2022.49" /><published>2022-12-07T00:00:00+05:30</published><updated>2022-12-07T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-07-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h4 id="provide-support-for-appendreplace-options-in-sftp-pulls-based-on-date-patterns-in-file-names">Provide support for append/replace options in SFTP pulls based on date patterns in file names.</h4>
-<p>Mammoth now supports option to append or replace data in SFTP connector with one
-time or periodic data pulls. If period option is chosen and the User provides a
-date pattern on file names, the latest file matching date pattern is picked for
-append or replace into the Dataset at the end of every period.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>When a file type dataset was added with new batch the dataset source type
-became to append type.</li>
-  <li>Explore Card Summary Average shows incorrect value in some scenarios.</li>
-  <li>Selecting columns in the grid does not select the columns in column browser.</li>
-</ul>
-
-<h3 id="beta-features">Beta features</h3>
-<ul>
-  <li>Bulk replace rule in Mammoth has supported fuzzy search for long. With this
-enhancement the User can now control the fuzziness threshold themselves.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.47</title><link href="http://localhost:4000/2022-11-24-release.html" rel="alternate" type="text/html" title="Release 2022.47" /><published>2022-11-24T00:00:00+05:30</published><updated>2022-11-24T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-24-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h4 id="support-for-join-with-different-column-types">Support for join with different column types.</h4>
-<p>Mammoth now allows for doing join even if data types are different. This is now
-supported for joining text with numeric columns and vice versa. When such a join
-is done, Mammoth internally casts the joined key column to the expected type.</p>
-
-<h4 id="support-for-single-sign-on">Support for Single sign on</h4>
-<p>Mammoth now support its customers to sign in with Google besides email and password based authentication.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>Rectified a few issues when ordering tasks in pipeline</li>
-  <li>Updated mails to match the revised brand</li>
-  <li>Join rule drop down does not show the Views with the join rule is pipeline is
-in auto run off mode</li>
-  <li>The join rule drop-down was not showing the views to select from when the join rule is new in the pipeline and auto-run off.</li>
-  <li>Pipeline reorder - Cancelling reorder was not reinstating the reordered step.</li>
-  <li>Pipeline - Discarding changes was not updating steps position in UI.</li>
-  <li>Failure to fix Export - PostgreSQL not acknowledged. It was failing silently.</li>
-  <li>Reports were not showing proper date formats.</li>
-  <li>Index row size was exceeding max value: Postgres error in backend and because of this error branchout to ds was failing.</li>
-  <li>Account list didn’t have a vertical scroll bar to navigate when the user is part of multiple accounts.</li>
-  <li>Pasting crosstab task was showing incorrect name i.e branchout in the pipeline.</li>
-  <li>Branch out - Dataset name was not showing up when opened to edit the action in auto-run off mode.</li>
-  <li>After OAuth type identity creation, Mammoth navigates to the file uploads tab instead of respective integration.</li>
-</ul>]]></content><author><name>karthick</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2022.46</title><link href="http://localhost:4000/2022-11-17-release.html" rel="alternate" type="text/html" title="Release 2022.46" /><published>2022-11-17T00:00:00+05:30</published><updated>2022-11-17T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-11-17-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h4 id="support-for-custom-domains-for-salesforce-integration">Support for custom domains for Salesforce integration.</h4>
-<p>Mammoth now supports salesforce sign-in for custom domains besides the main salesforce domain.</p>
-
-<h4 id="third-party-connectors-in-mammoth-now-allow-for-replacing-data-in-the-dataset-with-new-rows-of-data-in-the-remote-data-store">Third-party connectors in Mammoth now allow for replacing data in the dataset with new rows of data in the remote data store.</h4>
-<p>If you have a table in your database to which rows are added periodically and you want to process only the latest rows in Mammoth, you can do this now. Earlier you could pull the latest rows in Mammoth but you would keep all in Mammoth (using the Combine mode in data pulls). Now, Mammoth allows you to pull the latest batch of data in the remote table in replace mode.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>In some scenarios Pipeline in a View would show loader thus preventing access to the task Menu. This is now resolved.</li>
-  <li>Error column shows up in column selection field of the task after copy pasting a task.</li>
-  <li>Canceling a function shows inocorrect data types in a specific scenario.</li>
-  <li>Format not handled correctly for numeric columns.</li>
-  <li>Multiple issues in Search bar on account landing.</li>
-  <li>A file with unambigous date column asks for user input.</li>
-  <li>Pending update summary doesn’t show right details.</li>
-  <li>A file is showing empty grid.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
