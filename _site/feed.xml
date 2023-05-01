@@ -1,5 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-23T16:30:39+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.12</title><link href="http://localhost:4000/2023-03-23-release.html" rel="alternate" type="text/html" title="Release 2023.12" /><published>2023-03-23T00:00:00+05:30</published><updated>2023-03-23T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-03-23-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-30T16:44:59+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.17</title><link href="http://localhost:4000/2023-04-29-release.html" rel="alternate" type="text/html" title="Release 2023.17" /><published>2023-04-29T00:00:00+05:30</published><updated>2023-04-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-04-29-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<h4 id="email-notification-for-pipeline-errorsan-alpha-feature-on-demand">Email Notification for Pipeline Errors.(an alpha feature on demand)</h4>
+<ul>
+  <li>Mammoth have added an email notification feature to alert users when a task or action fails during pipeline execution.</li>
+</ul>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Fixed an issue where zip file uploads were not working.</li>
+  <li>Fixed an issue where users were unable to move a DS/Folder to the Data Library.</li>
+  <li>Fixed an issue where column renames in foreign view did not get reflected in the join rule’s pipeline description until the page was refreshed.</li>
+  <li>Fixed an issue where in/out links did not disappear when the dependent dataview was deleted.</li>
+  <li>Fixed an issue where dragging a file directly from the browser to the data library did not work every time.</li>
+  <li>Fixed an issue where runtime errors were not being displayed for internal export task failures.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.15</title><link href="http://localhost:4000/2023-04-11-release.html" rel="alternate" type="text/html" title="Release 2023.15" /><published>2023-04-11T00:00:00+05:30</published><updated>2023-04-11T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-04-11-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+<h4 id="improved-regex-error-handling-an-alpha-feature-on-request">Improved Regex Error Handling (An alpha feature on request)</h4>
+<ul>
+  <li>Mammoth improved the handling of regex errors in the Extract Text rule by implementing a validator to disallow invalid regex, such as ], [A-Z{1,3}. Spaces to be matched now have to be explicitly mentioned with a preceeding backslash. <space> changes to <backslash><space></space></backslash></space></li>
+</ul>
+
+<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Resolved an issue where data export to Redshift was not working.</li>
+  <li>Resolved an issue where copy-pasting the branch out did not work correctly.</li>
+  <li>Resolved an issue where the underline for Add sort had not been removed in the Top bottom rule and Window function rule.</li>
+  <li>Fixed UI and functional issues around identities, queries, and table names in the Third Party Connector Modal.</li>
+  <li>Third Party Connector Modal: Resolved an issue where  Postgresql did not display the correct dataset after datapull.</li>
+  <li>Third Party Connector Modal: Resolved an issue where MySql merged the next row data with the previous row when the previous row data ended with a single backslash (“").</li>
+  <li>An issue has been resolved where renamed column names did not appear in the task pipeline for the Join rule.</li>
+  <li>Resolved an issue where the exported pipeline in Branchout to ds was re-running even after a manual data push.</li>
+  <li>Resolved an issue where duplicating views with Dataset wasn’t working as expected</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements Improved Regex Error Handling (An alpha feature on request) Mammoth improved the handling of regex errors in the Extract Text rule by implementing a validator to disallow invalid regex, such as ], [A-Z{1,3}. Spaces to be matched now have to be explicitly mentioned with a preceeding backslash. changes to]]></summary></entry><entry><title type="html">Release 2023.13</title><link href="http://localhost:4000/2023-03-28-release.html" rel="alternate" type="text/html" title="Release 2023.13" /><published>2023-03-28T00:00:00+05:30</published><updated>2023-03-28T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-03-28-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
   <li>Addressed an issue with the window function not working correctly when used with a date column, resulting in the same column being produced.</li>
@@ -8,6 +42,7 @@
   <li>Addressed an issue where folder deletion was showing a loader.</li>
   <li>Fixed an error that was appearing in the console due to a Join rule.</li>
   <li>Resolved an issue where an error icon was shown while creating the BigQuery export action.</li>
+  <li>Fixed an issue where ‘Get Started’ link was showing an empty page.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.10</title><link href="http://localhost:4000/2023-03-11-release.html" rel="alternate" type="text/html" title="Release 2023.10" /><published>2023-03-11T00:00:00+05:30</published><updated>2023-03-11T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-03-11-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="smart-combine-on-big-query-is-now-available-as-an-alpha-feature-on-request">Smart combine on Big Query is now available as an alpha feature (on request)</h4>
@@ -110,18 +145,4 @@
   <li>Added tooltip messages for disabled items when the pipeline is in error.</li>
   <li>Added an error message when the user tries to delete a View which has been used in a join rule elsewhere.</li>
   <li>When the column name is long, the data type is not visible in the Report. This has been fixed.</li>
-</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2022.52</title><link href="http://localhost:4000/2022-12-29-release.html" rel="alternate" type="text/html" title="Release 2022.52" /><published>2022-12-29T00:00:00+05:30</published><updated>2022-12-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-29-release.html"><![CDATA[<h3 id="defect-fix">Defect fix</h3>
-
-<ul>
-  <li>In some scenarios,the export task would not run by itself on data updates.This has been fixed now.</li>
-</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fix]]></summary></entry><entry><title type="html">Release 2022.51</title><link href="http://localhost:4000/2022-12-22-release.html" rel="alternate" type="text/html" title="Release 2022.51" /><published>2022-12-22T00:00:00+05:30</published><updated>2022-12-22T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2022-12-22-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h4 id="mammoth-now-supports-duplicating-views-when-duplicating-datasets">Mammoth now supports duplicating Views when duplicating Datasets.</h4>
-<p>When a user duplicates a data source,now they can choose to duplicate the data itself as well as any views and pipelines associated with the data source. This can save time and effort by allowing users to quickly create copies of existing data sources and their associated views and pipelines.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>Clicking on the Mammoth icon opened the root folder in the Data Library. Now the Dataset name is clickable and opens the folder in  which the Dataset exists. Clicking on the Mammoth icon continues to open the root folder.</li>
-  <li>Reset the view throws incorrect notification.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
+</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry></feed>

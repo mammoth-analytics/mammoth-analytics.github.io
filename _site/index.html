@@ -261,10 +261,32 @@
                         </li>
                     
                         
-                        <li class="chapter" data-level="1.1" data-path="/2023-03-23-release.html">
+                        <li class="chapter" data-level="1.1" data-path="/2023-03-28-release.html">
                         
-                            <a href="/2023-03-23-release.html">
-                                Release 2023.12
+                            <a href="/2023-03-28-release.html">
+                                Release 2023.13
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-04-11-release.html">
+                        
+                            <a href="/2023-04-11-release.html">
+                                Release 2023.15
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-04-29-release.html">
+                        
+                            <a href="/2023-04-29-release.html">
+                                Release 2023.17
                             </a>
                             
                                 
@@ -325,19 +347,27 @@ p, h1 {
         <h1 class="entry-title">
             
             
-                Release 2023.12
+                Release 2023.17
             
             </h1>
-            <div class="entry-content"><h3 id="defect-fixes">Defect fixes</h3>
+            <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
+
+<h4 id="email-notification-for-pipeline-errorsan-alpha-feature-on-demand">Email Notification for Pipeline Errors.(an alpha feature on demand)</h4>
+<ul>
+  <li>Mammoth have added an email notification feature to alert users when a task or action fails during pipeline execution.</li>
+</ul>
+
+<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>Addressed an issue with the window function not working correctly when used with a date column, resulting in the same column being produced.</li>
-  <li>Resolved an issue where creating a new branchout and sending data from multiple views resulted in duplicate datasets being created.</li>
-  <li>Third-party connector modal - Fixed an issue where Zoom OAuth redirection gave an error when the browser was already logged in for Zoom.</li>
-  <li>Addressed an issue where folder deletion was showing a loader.</li>
-  <li>Fixed an error that was appearing in the console due to a Join rule.</li>
-  <li>Resolved an issue where an error icon was shown while creating the BigQuery export action.</li>
+  <li>Fixed an issue where zip file uploads were not working.</li>
+  <li>Fixed an issue where users were unable to move a DS/Folder to the Data Library.</li>
+  <li>Fixed an issue where column renames in foreign view did not get reflected in the join rule’s pipeline description until the page was refreshed.</li>
+  <li>Fixed an issue where in/out links did not disappear when the dependent dataview was deleted.</li>
+  <li>Fixed an issue where dragging a file directly from the browser to the data library did not work every time.</li>
+  <li>Fixed an issue where runtime errors were not being displayed for internal export task failures.</li>
 </ul>
+
 </div>
     </body>
 </html>
@@ -477,7 +507,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-03-23 16:30:39 +0530"
+        "time": "2023-04-30 16:44:59 +0530"
     },
     "basePath": "",
     "book": {
