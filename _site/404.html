@@ -29,7 +29,7 @@
 
 
         
-            <link rel="next" href="/2022-09-30-release.html" />
+            <link rel="next" href="/2022-08-19-release.html" />
         
     </head>
     <body>
@@ -61,6 +61,39 @@
                 
                     
 
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2022-08-19-release.html">
+                        
+                            <a href="/2022-08-19-release.html">
+                                Release 2022.33
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2022-09-09-release.html">
+                        
+                            <a href="/2022-09-09-release.html">
+                                Release 2022.35
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2022-09-22-release.html">
+                        
+                            <a href="/2022-09-22-release.html">
+                                Release 2022.38
+                            </a>
+                            
+                                
+                            
+                        </li>
                     
                         
                         <li class="chapter" data-level="1.1" data-path="/2022-09-30-release.html">
@@ -360,9 +393,9 @@
             </h1>
             <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
 
-<h4 id="email-notification-for-pipeline-errorsan-alpha-feature-on-demand">Email Notification for Pipeline Errors.(an alpha feature on demand)</h4>
+<h4 id="email-notification-for-pipeline-errors">Email notification for Pipeline errors</h4>
 <ul>
-  <li>Mammoth have added an email notification feature to alert users when a task or action fails during pipeline execution.</li>
+  <li>Mammoth now provides email alerts to users when a task fails during pipeline execution</li>
 </ul>
 
 <h3 id="defect-fixes">Defect fixes</h3>
@@ -370,10 +403,17 @@
 <ul>
   <li>Fixed an issue where zip file uploads were not working.</li>
   <li>Fixed an issue where users were unable to move a DS/Folder to the Data Library.</li>
-  <li>Fixed an issue where column renames in foreign view did not get reflected in the join rule’s pipeline description until the page was refreshed.</li>
-  <li>Fixed an issue where in/out links did not disappear when the dependent dataview was deleted.</li>
+  <li>Fixed an issue where column rename in foreign view did not reflect in the current view.</li>
+  <li>Fixed an issue with the missing update for in/out links for deleted View.</li>
   <li>Fixed an issue where dragging a file directly from the browser to the data library did not work every time.</li>
-  <li>Fixed an issue where runtime errors were not being displayed for internal export task failures.</li>
+  <li>Fixed an issue for missing display of internal export task errors.</li>
+</ul>
+
+<h3 id="security-patches">Security Patches</h3>
+
+<ul>
+  <li>Moved our a few values stored in broweser local storage</li>
+  <li>Implemented rate limiting on APIs to prevent request bombardment</li>
 </ul>
 
 </div>
@@ -409,7 +449,7 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
-                        <a href="/2022-09-30-release.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Release 2022.39">
+                        <a href="/2022-08-19-release.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Release 2022.33">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -428,11 +468,11 @@ MathJax = {
 
         
         "next": {
-            "title": "Release 2022.39",
+            "title": "Release 2022.33",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2022-09-30-release.md",
-            "ref": "_posts/2022-09-30-release.md",
+            "path": "_posts/2022-08-19-release.md",
+            "ref": "_posts/2022-08-19-release.md",
             "articles": []
         },
         
@@ -516,7 +556,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-04-30 16:44:59 +0530"
+        "time": "2023-05-08 16:25:38 +0530"
     },
     "basePath": "",
     "book": {

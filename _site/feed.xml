@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-30T16:44:59+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-08T16:25:38+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.17</title><link href="http://localhost:4000/2023-04-29-release.html" rel="alternate" type="text/html" title="Release 2023.17" /><published>2023-04-29T00:00:00+05:30</published><updated>2023-04-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-04-29-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
-<h4 id="email-notification-for-pipeline-errorsan-alpha-feature-on-demand">Email Notification for Pipeline Errors.(an alpha feature on demand)</h4>
+<h4 id="email-notification-for-pipeline-errors">Email notification for Pipeline errors</h4>
 <ul>
-  <li>Mammoth have added an email notification feature to alert users when a task or action fails during pipeline execution.</li>
+  <li>Mammoth now provides email alerts to users when a task fails during pipeline execution</li>
 </ul>
 
 <h3 id="defect-fixes">Defect fixes</h3>
@@ -11,10 +11,17 @@
 <ul>
   <li>Fixed an issue where zip file uploads were not working.</li>
   <li>Fixed an issue where users were unable to move a DS/Folder to the Data Library.</li>
-  <li>Fixed an issue where column renames in foreign view did not get reflected in the join rule’s pipeline description until the page was refreshed.</li>
-  <li>Fixed an issue where in/out links did not disappear when the dependent dataview was deleted.</li>
+  <li>Fixed an issue where column rename in foreign view did not reflect in the current view.</li>
+  <li>Fixed an issue with the missing update for in/out links for deleted View.</li>
   <li>Fixed an issue where dragging a file directly from the browser to the data library did not work every time.</li>
-  <li>Fixed an issue where runtime errors were not being displayed for internal export task failures.</li>
+  <li>Fixed an issue for missing display of internal export task errors.</li>
+</ul>
+
+<h3 id="security-patches">Security Patches</h3>
+
+<ul>
+  <li>Moved our a few values stored in broweser local storage</li>
+  <li>Implemented rate limiting on APIs to prevent request bombardment</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.15</title><link href="http://localhost:4000/2023-04-11-release.html" rel="alternate" type="text/html" title="Release 2023.15" /><published>2023-04-11T00:00:00+05:30</published><updated>2023-04-11T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-04-11-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 <h4 id="improved-regex-error-handling-an-alpha-feature-on-request">Improved Regex Error Handling (An alpha feature on request)</h4>
 <ul>
