@@ -293,6 +293,17 @@
                             
                         </li>
                     
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-05-18-release.html">
+                        
+                            <a href="/2023-05-18-release.html">
+                                Release 2023.20
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
 
                     
                         <!-- <li class="divider"></li> -->
@@ -347,25 +358,26 @@ p, h1 {
         <h1 class="entry-title">
             
             
-                Release 2023.17
+                Release 2023.20
             
             </h1>
-            <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
+            <div class="entry-content"><h3 id="defect-fixes">Defect fixes</h3>
 
-<h4 id="email-notification-for-pipeline-errorsan-alpha-feature-on-demand">Email Notification for Pipeline Errors.(an alpha feature on demand)</h4>
 <ul>
-  <li>Mammoth have added an email notification feature to alert users when a task or action fails during pipeline execution.</li>
+  <li>Edit query - Fixed the issue where the datapull fails in case of a unique sequence column during query editing.</li>
+  <li>Edit query- Resolved the problem where the unique sequence column name was not appearing in the ‘On refresh’ section of the Preview.</li>
+  <li>Fixed the issue where the option to add data was not visible when there were only reports available in account landing page.</li>
+  <li>Third party connetor modal- Resolved the inability to create a Hubspot identity.</li>
+  <li>Fixed the issue where BigQuery was not displaying the correct error message when encountering an error.</li>
+  <li>Resolved the intermittent problem where the Branch out logo was not showing up for line items on the landing page.</li>
+  <li>Resolved the issue where moving a DS/Folder to the Data Library was not possible.</li>
 </ul>
 
-<h3 id="defect-fixes">Defect fixes</h3>
+<h3 id="api-modifications">API modifications</h3>
 
 <ul>
-  <li>Fixed an issue where zip file uploads were not working.</li>
-  <li>Fixed an issue where users were unable to move a DS/Folder to the Data Library.</li>
-  <li>Fixed an issue where column renames in foreign view did not get reflected in the join rule’s pipeline description until the page was refreshed.</li>
-  <li>Fixed an issue where in/out links did not disappear when the dependent dataview was deleted.</li>
-  <li>Fixed an issue where dragging a file directly from the browser to the data library did not work every time.</li>
-  <li>Fixed an issue where runtime errors were not being displayed for internal export task failures.</li>
+  <li>Fixed the issue where the API rate limit on post/patch requests was not appropriately configured, resulting in slow loading of explore cards when a user had multiple cards on multiple views and opened them simultaneously. The limit has now been resolved and set to 60.</li>
+  <li>Added middleware for FastAPI setup to include authentication checks in the setup.</li>
 </ul>
 
 </div>
@@ -507,7 +519,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-04-30 16:44:59 +0530"
+        "time": "2023-05-18 21:28:13 +0530"
     },
     "basePath": "",
     "book": {
