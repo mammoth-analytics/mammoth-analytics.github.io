@@ -1,8 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-08T16:25:38+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.17</title><link href="http://localhost:4000/2023-04-29-release.html" rel="alternate" type="text/html" title="Release 2023.17" /><published>2023-04-29T00:00:00+05:30</published><updated>2023-04-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-04-29-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-18T21:28:13+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.20</title><link href="http://localhost:4000/2023-05-18-release.html" rel="alternate" type="text/html" title="Release 2023.20" /><published>2023-05-18T00:00:00+05:30</published><updated>2023-05-18T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-05-18-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Edit query - Fixed the issue where the datapull fails in case of a unique sequence column during query editing.</li>
+  <li>Edit query- Resolved the problem where the unique sequence column name was not appearing in the ‘On refresh’ section of the Preview.</li>
+  <li>Fixed the issue where the option to add data was not visible when there were only reports available in account landing page.</li>
+  <li>Third party connetor modal- Resolved the inability to create a Hubspot identity.</li>
+  <li>Fixed the issue where BigQuery was not displaying the correct error message when encountering an error.</li>
+  <li>Resolved the intermittent problem where the Branch out logo was not showing up for line items on the landing page.</li>
+  <li>Resolved the issue where moving a DS/Folder to the Data Library was not possible.</li>
+</ul>
+
+<h3 id="api-modifications">API modifications</h3>
+
+<ul>
+  <li>Fixed the issue where the API rate limit on post/patch requests was not appropriately configured, resulting in slow loading of explore cards when a user had multiple cards on multiple views and opened them simultaneously. The limit has now been resolved and set to 60.</li>
+  <li>Added middleware for FastAPI setup to include authentication checks in the setup.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.17</title><link href="http://localhost:4000/2023-04-29-release.html" rel="alternate" type="text/html" title="Release 2023.17" /><published>2023-04-29T00:00:00+05:30</published><updated>2023-04-29T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-04-29-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h4 id="email-notification-for-pipeline-errors">Email notification for Pipeline errors</h4>
 <ul>
+
   <li>Mammoth now provides email alerts to users when a task fails during pipeline execution</li>
 </ul>
 
@@ -145,11 +164,4 @@
   <li>When a new batch will come in and dataset auto sync is off, The new batch goes into sync pending state.</li>
   <li>Webhook creation feature was missing from the home page.</li>
   <li>Lookup task description was not showing up in the pipeline.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.01</title><link href="http://localhost:4000/2023-01-02-release.html" rel="alternate" type="text/html" title="Release 2023.01" /><published>2023-01-02T00:00:00+05:30</published><updated>2023-01-02T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-01-02-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>The column browser should stay disabled when the pipeline has an error. This has been fixed now.</li>
-  <li>Added tooltip messages for disabled items when the pipeline is in error.</li>
-  <li>Added an error message when the user tries to delete a View which has been used in a join rule elsewhere.</li>
-  <li>When the column name is long, the data type is not visible in the Report. This has been fixed.</li>
-</ul>]]></content><author><name>priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry></feed>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
