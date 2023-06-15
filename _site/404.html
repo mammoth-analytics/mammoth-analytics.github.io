@@ -327,10 +327,21 @@
                         </li>
                     
                         
-                        <li class="chapter" data-level="1.1" data-path="/2023-05-18-release.html">
+                        <li class="chapter" data-level="1.1" data-path="/2023-05-23-release.html">
                         
-                            <a href="/2023-05-18-release.html">
-                                Release 2023.20
+                            <a href="/2023-05-23-release.html">
+                                Release 2023.21
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-06-14-release.html">
+                        
+                            <a href="/2023-06-14-release.html">
+                                Release 2023.24
                             </a>
                             
                                 
@@ -399,30 +410,32 @@
         <h1 class="entry-title">
             
             
-                Release 2023.20
+                Release 2023.24
             
             </h1>
-            <div class="entry-content"><h3 id="defect-fixes">Defect fixes</h3>
+            <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
 
+<h3 id="action-bar-and-data-grid-redesign">Action Bar and Data Grid Redesign</h3>
 
+<p>Mammoth has introduced a fresh new design for the action bar and data grid, aiming to provide an enhanced user experience through improved interfaces. In this update, you will notice significant changes in the top portion called the action bar and the grid where data is displayed.</p>
+<h5 id="ui-changes">UI Changes:</h5>
 <ul>
-  <li>Edit query - Fixed the issue where the datapull fails in case of a unique sequence column during query editing.</li>
-  <li>Edit query- Resolved the problem where the unique sequence column name was not appearing in the ‘On refresh’ section of the Preview.</li>
-  <li>Fixed the issue where the option to add data was not visible when there were only reports available in account landing page.</li>
-  <li>Third party connetor modal- Resolved the inability to create a Hubspot identity.</li>
-  <li>Fixed the issue where BigQuery was not displaying the correct error message when encountering an error.</li>
-  <li>Resolved the intermittent problem where the Branch out logo was not showing up for line items on the landing page.</li>
-  <li>Resolved the issue where moving a DS/Folder to the Data Library was not possible.</li>
-
+  <li>Streamlined Transform Menu: The Transform menu has been updated to provide a more intuitive and user-friendly experience.</li>
+  <li>Enhanced Column Browser: The column browser has undergone improvements to offer a better browsing experience.</li>
+  <li>Relocated Features: The option to publish reports, publish databases, and access the CSV link has been moved to more accessible locations within the new UI, ensuring easier usage and navigation.</li>
 </ul>
 
-<h3 id="api-modifications">API modifications</h3>
+<p>Please note that while the overall functionality remains the same, various features have been repositioned within the new UI to provide a more streamlined and efficient workflow</p>
+<h5 id="removed-feature">Removed Feature:</h5>
+<ul>
+  <li>Quick Export Option: The Quick Export option, previously located in the top right corner, has been removed from the UI.</li>
+</ul>
+
+<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-
-  <li>Fixed the issue where the API rate limit on post/patch requests was not appropriately configured, resulting in slow loading of explore cards when a user had multiple cards on multiple views and opened them simultaneously. The limit has now been resolved and set to 60.</li>
-  <li>Added middleware for FastAPI setup to include authentication checks in the setup.</li>
-
+  <li>The issue causing race condition has been resolved, ensuring that no stale data appears in the explore card.</li>
+  <li>The problem of infinite scrolling in grid data has been fixed.</li>
 </ul>
 
 </div>
@@ -565,9 +578,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-
-        "time": "2023-05-18 21:28:13 +0530"
-
+        "time": "2023-06-14 13:04:06 +0530"
     },
     "basePath": "",
     "book": {
