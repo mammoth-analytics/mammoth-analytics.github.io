@@ -29,7 +29,7 @@
 
 
         
-            <link rel="next" href="/2022-08-19-release.html" />
+            <link rel="next" href="/2022-08-04-release.html" />
         
     </head>
     <body>
@@ -61,6 +61,17 @@
                 
                     
 
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2022-08-04-release.html">
+                        
+                            <a href="/2022-08-04-release.html">
+                                Release 2022.31
+                            </a>
+                            
+                                
+                            
+                        </li>
                     
                         
                         <li class="chapter" data-level="1.1" data-path="/2022-08-19-release.html">
@@ -348,6 +359,17 @@
                             
                         </li>
                     
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-06-27-release.html">
+                        
+                            <a href="/2023-06-27-release.html">
+                                Release 2023.26
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
 
                     
                         <!-- <li class="divider"></li> -->
@@ -410,32 +432,26 @@
         <h1 class="entry-title">
             
             
-                Release 2023.24
+                Release 2023.26
             
             </h1>
-            <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
-
-<h3 id="action-bar-and-data-grid-redesign">Action Bar and Data Grid Redesign</h3>
-
-<p>Mammoth has introduced a fresh new design for the action bar and data grid, aiming to provide an enhanced user experience through improved interfaces. In this update, you will notice significant changes in the top portion called the action bar and the grid where data is displayed.</p>
-<h5 id="ui-changes">UI Changes:</h5>
-<ul>
-  <li>Streamlined Transform Menu: The Transform menu has been updated to provide a more intuitive and user-friendly experience.</li>
-  <li>Enhanced Column Browser: The column browser has undergone improvements to offer a better browsing experience.</li>
-  <li>Relocated Features: The option to publish reports, publish databases, and access the CSV link has been moved to more accessible locations within the new UI, ensuring easier usage and navigation.</li>
-</ul>
-
-<p>Please note that while the overall functionality remains the same, various features have been repositioned within the new UI to provide a more streamlined and efficient workflow</p>
-<h5 id="removed-feature">Removed Feature:</h5>
-<ul>
-  <li>Quick Export Option: The Quick Export option, previously located in the top right corner, has been removed from the UI.</li>
-</ul>
-
-<h3 id="defect-fixes">Defect fixes</h3>
+            <div class="entry-content"><h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>The issue causing race condition has been resolved, ensuring that no stale data appears in the explore card.</li>
-  <li>The problem of infinite scrolling in grid data has been fixed.</li>
+  <li>Resolved the issue where the “Move to” UI in the Folder feature had additional space.</li>
+  <li>Fixed an issue where not all assets of a workspace were transferred to the target user.</li>
+  <li>Resolved the issue of element overflowing the viewport on &lt;Data Library?&gt;.</li>
+  <li>Fixed the issue where downloading as CSV would result in downloading the CSV file twice.</li>
+  <li>Resolved the issue where reset on the foreign view in the Join rule did not update the dependent data sources.</li>
+  <li>Fixed the issue where Branch out did not exit the error state when columns were reordered and all columns were correctly mapped.</li>
+  <li>Resolved the issue where the Pipeline remained in an error state even after fixing the rule.</li>
+  <li>Fixed the issue where creating a data source in combine mode and a unique sequence column failed for Snowflake integration.</li>
+  <li>Resolved the issue where email notifications were not sent when branch out or join operations encountered errors.</li>
+  <li>Fixed the issue where the Duplicate entry modal in the Join rule displayed overlapping text when the key column had duplicate values and they were long strings.</li>
+  <li>Resolved the issue where incorrect data was displayed in the Third-party connector modal when quickly changing the table name.</li>
+  <li>Resolved the issue where applying a template or adding a group aggregate rule would result in an empty grid.</li>
+  <li>Fixed the issue where the “Download as CSV” feature did not export only the filtered data when explore card filters were applied.</li>
+  <li>Fixed the issue in “Date difference” rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</li>
 </ul>
 
 </div>
@@ -471,7 +487,7 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
-                        <a href="/2022-08-19-release.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Release 2022.33">
+                        <a href="/2022-08-04-release.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Release 2022.31">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     
@@ -490,11 +506,11 @@ MathJax = {
 
         
         "next": {
-            "title": "Release 2022.33",
+            "title": "Release 2022.31",
             "level": "1.2",
             "depth": 1,
-            "path": "_posts/2022-08-19-release.md",
-            "ref": "_posts/2022-08-19-release.md",
+            "path": "_posts/2022-08-04-release.md",
+            "ref": "_posts/2022-08-04-release.md",
             "articles": []
         },
         
@@ -578,7 +594,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-06-14 13:04:06 +0530"
+        "time": "2023-06-28 12:05:58 +0530"
     },
     "basePath": "",
     "book": {
