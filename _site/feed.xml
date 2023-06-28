@@ -1,25 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-22T16:11:02+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.26</title><link href="http://localhost:4000/2023-06-22-release.html" rel="alternate" type="text/html" title="Release 2023.26" /><published>2023-06-22T00:00:00+05:30</published><updated>2023-06-22T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-22-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h3 id="improved-date-difference-rule">Improved Date difference rule</h3>
-
-<p>Enhanced the Date difference rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-28T12:05:58+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.26</title><link href="http://localhost:4000/2023-06-27-release.html" rel="alternate" type="text/html" title="Release 2023.26" /><published>2023-06-27T00:00:00+05:30</published><updated>2023-06-27T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-27-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>Resolved the issue where the “Move to” UI in the Folder feature was broken.</li>
-  <li>Fixed the issue where not all assets of an account were transferred to the target user.</li>
-  <li>Resolved the issue of invalid HTML presence in the DOM, causing the element to overflow and be absent from the viewport.</li>
+  <li>Resolved the issue where the “Move to” UI in the Folder feature had additional space.</li>
+  <li>Fixed an issue where not all assets of a workspace were transferred to the target user.</li>
+  <li>Resolved the issue of element overflowing the viewport on &lt;Data Library?&gt;.</li>
   <li>Fixed the issue where downloading as CSV would result in downloading the CSV file twice.</li>
-  <li>Resolved the issue where resetting the foreign view in the Join rule did not update the dependent data sources.</li>
+  <li>Resolved the issue where reset on the foreign view in the Join rule did not update the dependent data sources.</li>
   <li>Fixed the issue where Branch out did not exit the error state when columns were reordered and all columns were correctly mapped.</li>
   <li>Resolved the issue where the Pipeline remained in an error state even after fixing the rule.</li>
-  <li>Fixed the issue where creating a data source with combine mode and a USC column failed in Snowflake.</li>
+  <li>Fixed the issue where creating a data source in combine mode and a unique sequence column failed for Snowflake integration.</li>
   <li>Resolved the issue where email notifications were not sent when branch out or join operations encountered errors.</li>
   <li>Fixed the issue where the Duplicate entry modal in the Join rule displayed overlapping text when the key column had duplicate values and they were long strings.</li>
   <li>Resolved the issue where incorrect data was displayed in the Third-party connector modal when quickly changing the table name.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.24</title><link href="http://localhost:4000/2023-06-14-release.html" rel="alternate" type="text/html" title="Release 2023.24" /><published>2023-06-14T00:00:00+05:30</published><updated>2023-06-14T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-14-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+  <li>Resolved the issue where applying a template or adding a group aggregate rule would result in an empty grid.</li>
+  <li>Fixed the issue where the “Download as CSV” feature did not export only the filtered data when explore card filters were applied.</li>
+  <li>Fixed the issue in “Date difference” rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.24</title><link href="http://localhost:4000/2023-06-14-release.html" rel="alternate" type="text/html" title="Release 2023.24" /><published>2023-06-14T00:00:00+05:30</published><updated>2023-06-14T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-14-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h3 id="action-bar-and-data-grid-redesign">Action Bar and Data Grid Redesign</h3>
 

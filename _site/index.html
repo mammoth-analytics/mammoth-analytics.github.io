@@ -360,9 +360,9 @@
                         </li>
                     
                         
-                        <li class="chapter" data-level="1.1" data-path="/2023-06-22-release.html">
+                        <li class="chapter" data-level="1.1" data-path="/2023-06-27-release.html">
                         
-                            <a href="/2023-06-22-release.html">
+                            <a href="/2023-06-27-release.html">
                                 Release 2023.26
                             </a>
                             
@@ -427,26 +427,23 @@ p, h1 {
                 Release 2023.26
             
             </h1>
-            <div class="entry-content"><h3 id="enhancements">Enhancements</h3>
-
-<h3 id="improved-date-difference-rule">Improved Date difference rule</h3>
-
-<p>Enhanced the Date difference rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
+            <div class="entry-content"><h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
-  <li>Resolved the issue where the “Move to” UI in the Folder feature was broken.</li>
-  <li>Fixed the issue where not all assets of an account were transferred to the target user.</li>
-  <li>Resolved the issue of invalid HTML presence in the DOM, causing the element to overflow and be absent from the viewport.</li>
+  <li>Resolved the issue where the “Move to” UI in the Folder feature had additional space.</li>
+  <li>Fixed an issue where not all assets of a workspace were transferred to the target user.</li>
+  <li>Resolved the issue of element overflowing the viewport on &lt;Data Library?&gt;.</li>
   <li>Fixed the issue where downloading as CSV would result in downloading the CSV file twice.</li>
-  <li>Resolved the issue where resetting the foreign view in the Join rule did not update the dependent data sources.</li>
+  <li>Resolved the issue where reset on the foreign view in the Join rule did not update the dependent data sources.</li>
   <li>Fixed the issue where Branch out did not exit the error state when columns were reordered and all columns were correctly mapped.</li>
   <li>Resolved the issue where the Pipeline remained in an error state even after fixing the rule.</li>
-  <li>Fixed the issue where creating a data source with combine mode and a USC column failed in Snowflake.</li>
+  <li>Fixed the issue where creating a data source in combine mode and a unique sequence column failed for Snowflake integration.</li>
   <li>Resolved the issue where email notifications were not sent when branch out or join operations encountered errors.</li>
   <li>Fixed the issue where the Duplicate entry modal in the Join rule displayed overlapping text when the key column had duplicate values and they were long strings.</li>
   <li>Resolved the issue where incorrect data was displayed in the Third-party connector modal when quickly changing the table name.</li>
+  <li>Resolved the issue where applying a template or adding a group aggregate rule would result in an empty grid.</li>
+  <li>Fixed the issue where the “Download as CSV” feature did not export only the filtered data when explore card filters were applied.</li>
+  <li>Fixed the issue in “Date difference” rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</li>
 </ul>
 
 </div>
@@ -588,7 +585,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-06-22 16:11:02 +0530"
+        "time": "2023-06-28 12:05:58 +0530"
     },
     "basePath": "",
     "book": {
