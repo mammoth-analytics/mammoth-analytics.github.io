@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-28T12:05:58+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-06T17:02:46+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
 </subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.26</title><link href="http://localhost:4000/2023-06-27-release.html" rel="alternate" type="text/html" title="Release 2023.26" /><published>2023-06-27T00:00:00+05:30</published><updated>2023-06-27T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-27-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
 
 <ul>
@@ -16,7 +16,54 @@
   <li>Resolved the issue where applying a template or adding a group aggregate rule would result in an empty grid.</li>
   <li>Fixed the issue where the “Download as CSV” feature did not export only the filtered data when explore card filters were applied.</li>
   <li>Fixed the issue in “Date difference” rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.24</title><link href="http://localhost:4000/2023-06-14-release.html" rel="alternate" type="text/html" title="Release 2023.24" /><published>2023-06-14T00:00:00+05:30</published><updated>2023-06-14T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-14-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.27</title><link href="http://localhost:4000/2023-06-27-release.html" rel="alternate" type="text/html" title="Release 2023.27" /><published>2023-06-27T00:00:00+05:30</published><updated>2023-06-27T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-27-release.html"><![CDATA[<h3 id="enhancements">Enhancements:</h3>
+<h4 id="data-passthrough-control-data-sync">Data Passthrough Control (data-sync):</h4>
+<p>Data Sync now provides enhanced capabilities for managing data connections and controlling the flow of data between different components. With these improvements, you can:</p>
+<h6 id="apreview-panel">a)Preview Panel:</h6>
+<ul>
+  <li>Gain access to a wider range of dataset properties and view information.</li>
+  <li>Create and delete views directly from the preview panel.</li>
+  <li>Set different properties at the view level for greater customization.</li>
+</ul>
+
+<h6 id="bpipeline">b)Pipeline:</h6>
+<ul>
+  <li>Exercise more control over data handling at each step of the pipeline.</li>
+  <li>Utilize the new data-sync toggle option to manage data synchronization.</li>
+</ul>
+
+<h4 id="improved-data-flow-status">Improved Data Flow Status:</h4>
+<p>The workflow status modal has been enhanced to offer a comprehensive overview of active pipelines and data flows. Key features of this update include:</p>
+
+<h6 id="a-action-required">a) Action Required:</h6>
+
+<ul>
+  <li>Pending Data Updates: If an ongoing data flow encounters a task or view with data sync turned off, preventing further progress, the task and view details will be displayed in this section.</li>
+  <li>Pending Pipeline Changes: Any pipelines in draft mode that have pending changes will be highlighted here.</li>
+</ul>
+
+<h6 id="b-active-pipelines">b) Active Pipelines:</h6>
+<ul>
+  <li>Running: Providing information on currently running pipelines.</li>
+  <li>Queued: Displaying information on pipelines in the queue.</li>
+</ul>
+
+<h6 id="crun-updates-from-workflow-status-modal">c)Run updates from workflow status modal:</h6>
+<p>Now, in addition to viewing pending data updates and pipeline changes, you can directly initiate the execution of these updates from within the workflow status modal itself.</p>
+
+<h4 id="show-exports-in-data-out-links-">Show exports in Data-Out Links :</h4>
+<p>The data out indicator in the data library has been enhanced to display various exports, such as SQL Server, Postgres, and more, alongside other data connections.</p>
+
+<h4 id="allow-downloading-csv-at-step-level-">Allow downloading CSV at step level :</h4>
+<p>Mammoth now offers the capability to download CSV files directly from the preview data at different steps within the pipeline, providing greater flexibility and convenience for data analysis and manipulation.</p>
+
+<h3 id="defect-fixes">Defect Fixes:</h3>
+<ul>
+  <li>Resolved an issue where opening multiple views in a dataset sequentially would cause the page to become laggy and unresponsive over time.</li>
+  <li>Fixed the problem causing significant delay and page hang when opening the branchout function panel with a large number of columns.</li>
+  <li>Third Party Modal : Addressed the issue causing the query box to fluctuate inconsistently during the “Retrieve Latest Data” operation.</li>
+  <li>Improved overall performance for larger pipelines, resulting in better performance even with larger datasets.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements: Data Passthrough Control (data-sync): Data Sync now provides enhanced capabilities for managing data connections and controlling the flow of data between different components. With these improvements, you can: a)Preview Panel: Gain access to a wider range of dataset properties and view information. Create and delete views directly from the preview panel. Set different properties at the view level for greater customization.]]></summary></entry><entry><title type="html">Release 2023.24</title><link href="http://localhost:4000/2023-06-14-release.html" rel="alternate" type="text/html" title="Release 2023.24" /><published>2023-06-14T00:00:00+05:30</published><updated>2023-06-14T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-14-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h3 id="action-bar-and-data-grid-redesign">Action Bar and Data Grid Redesign</h3>
 
@@ -153,23 +200,4 @@
   <li>The column browser selection previously experienced scrolling lag and selection issues. These issues have been resolved.</li>
   <li>Resolved an issue with third party connectors where it was possible for users to create an existing identity multiple times while editing another connection.</li>
   <li>The issue where deleting a View in a Dataset with multiple Views caused another View to disappear has been fixed.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.07</title><link href="http://localhost:4000/2023-02-13-release.html" rel="alternate" type="text/html" title="Release 2023.07" /><published>2023-02-13T00:00:00+05:30</published><updated>2023-02-13T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-02-13-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h4 id="support-for-stored-procedures-in-salesforce">Support for Stored Procedures in Salesforce</h4>
-<p>Users can now execute stored procedure queries in the query box.</p>
-
-<h4 id="improved-messages-in-add-data-modal">Improved messages in Add Data modal.</h4>
-<p>Mammoth has enhanced the messaging for the components like My computer, Webhooks, etc under Add Data modal.</p>
-
-<h4 id="enhanced-explore-card-performance">Enhanced Explore card performance</h4>
-<p>Mammoth has significantly improved its performance when opening multiple Explore Cards.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>Resolved an error that was appearing in the console due to a Join rule.</li>
-  <li>Added a message to display when there are duplicate column names in the query result for Postgres and Redshift.</li>
-  <li>Fixed an issue where the warning modal was not appearing after editing a query for an existing dataset for third-party connectors.</li>
-  <li>Resolved UI issues in the Third-Party Connector for Data Addition.</li>
-  <li>Stabilized the movement of the navigation bar when scrolling up or down.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
