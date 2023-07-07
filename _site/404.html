@@ -370,6 +370,17 @@
                             
                         </li>
                     
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-06-27-release.html">
+                        
+                            <a href="/2023-06-27-release.html">
+                                Release 2023.27
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
 
                     
                         <!-- <li class="divider"></li> -->
@@ -432,28 +443,57 @@
         <h1 class="entry-title">
             
             
-                Release 2023.26
+                Release 2023.27
             
             </h1>
-            <div class="entry-content"><h3 id="defect-fixes">Defect fixes</h3>
-
+            <div class="entry-content"><h3 id="enhancements">Enhancements:</h3>
+<h4 id="data-passthrough-control-data-sync">Data Passthrough Control (data-sync):</h4>
+<p>Data Sync now provides enhanced capabilities for managing data connections and controlling the flow of data between different components. With these improvements, you can:</p>
+<h6 id="apreview-panel">a)Preview Panel:</h6>
 <ul>
-  <li>Resolved the issue where the “Move to” UI in the Folder feature had additional space.</li>
-  <li>Fixed an issue where not all assets of a workspace were transferred to the target user.</li>
-  <li>Resolved the issue of element overflowing the viewport on &lt;Data Library?&gt;.</li>
-  <li>Fixed the issue where downloading as CSV would result in downloading the CSV file twice.</li>
-  <li>Resolved the issue where reset on the foreign view in the Join rule did not update the dependent data sources.</li>
-  <li>Fixed the issue where Branch out did not exit the error state when columns were reordered and all columns were correctly mapped.</li>
-  <li>Resolved the issue where the Pipeline remained in an error state even after fixing the rule.</li>
-  <li>Fixed the issue where creating a data source in combine mode and a unique sequence column failed for Snowflake integration.</li>
-  <li>Resolved the issue where email notifications were not sent when branch out or join operations encountered errors.</li>
-  <li>Fixed the issue where the Duplicate entry modal in the Join rule displayed overlapping text when the key column had duplicate values and they were long strings.</li>
-  <li>Resolved the issue where incorrect data was displayed in the Third-party connector modal when quickly changing the table name.</li>
-  <li>Resolved the issue where applying a template or adding a group aggregate rule would result in an empty grid.</li>
-  <li>Fixed the issue where the “Download as CSV” feature did not export only the filtered data when explore card filters were applied.</li>
-  <li>Fixed the issue in “Date difference” rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</li>
+  <li>Gain access to a wider range of dataset properties and view information.</li>
+  <li>Create and delete views directly from the preview panel.</li>
+  <li>Set different properties at the view level for greater customization.</li>
 </ul>
 
+<h6 id="bpipeline">b)Pipeline:</h6>
+<ul>
+  <li>Exercise more control over data handling at each step of the pipeline.</li>
+  <li>Utilize the new data-sync toggle option to manage data synchronization.</li>
+</ul>
+
+<h4 id="improved-data-flow-status">Improved Data Flow Status:</h4>
+<p>The workflow status modal has been enhanced to offer a comprehensive overview of active pipelines and data flows. Key features of this update include:</p>
+
+<h6 id="a-action-required">a) Action Required:</h6>
+
+<ul>
+  <li>Pending Data Updates: If an ongoing data flow encounters a task or view with data sync turned off, preventing further progress, the task and view details will be displayed in this section.</li>
+  <li>Pending Pipeline Changes: Any pipelines in draft mode that have pending changes will be highlighted here.</li>
+</ul>
+
+<h6 id="b-active-pipelines">b) Active Pipelines:</h6>
+<ul>
+  <li>Running: Providing information on currently running pipelines.</li>
+  <li>Queued: Displaying information on pipelines in the queue.</li>
+</ul>
+
+<h6 id="crun-updates-from-workflow-status-modal">c)Run updates from workflow status modal:</h6>
+<p>Now, in addition to viewing pending data updates and pipeline changes, you can directly initiate the execution of these updates from within the workflow status modal itself.</p>
+
+<h4 id="show-exports-in-data-out-links-">Show exports in Data-Out Links :</h4>
+<p>The data out indicator in the data library has been enhanced to display various exports, such as SQL Server, Postgres, and more, alongside other data connections.</p>
+
+<h4 id="allow-downloading-csv-at-step-level-">Allow downloading CSV at step level :</h4>
+<p>Mammoth now offers the capability to download CSV files directly from the preview data at different steps within the pipeline, providing greater flexibility and convenience for data analysis and manipulation.</p>
+
+<h3 id="defect-fixes">Defect Fixes:</h3>
+<ul>
+  <li>Resolved an issue where opening multiple views in a dataset sequentially would cause the page to become laggy and unresponsive over time.</li>
+  <li>Fixed the problem causing significant delay and page hang when opening the branchout function panel with a large number of columns.</li>
+  <li>Third Party Modal : Addressed the issue causing the query box to fluctuate inconsistently during the “Retrieve Latest Data” operation.</li>
+  <li>Improved overall performance for larger pipelines, resulting in better performance even with larger datasets.</li>
+</ul>
 </div>
     </body>
 </html>
@@ -594,7 +634,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-06-28 12:05:58 +0530"
+        "time": "2023-07-06 17:02:46 +0530"
     },
     "basePath": "",
     "book": {
