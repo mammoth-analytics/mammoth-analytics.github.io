@@ -1,5 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-26T11:16:10+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
-</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.30</title><link href="http://localhost:4000/2023-07-26-release.html" rel="alternate" type="text/html" title="Release 2023.30" /><published>2023-07-26T00:00:00+05:30</published><updated>2023-07-26T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-07-26-release.html"><![CDATA[<h3 id="enhancements">Enhancements:</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-14T12:57:24+05:30</updated><id>http://localhost:4000/feed.xml</id><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Mammoth</name></author><entry><title type="html">Release 2023.32</title><link href="http://localhost:4000/2023-08-11-release.html" rel="alternate" type="text/html" title="Release 2023.32" /><published>2023-08-11T00:00:00+05:30</published><updated>2023-08-11T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-08-11-release.html"><![CDATA[<h3 id="enhancements">Enhancements:</h3>
+
+<h4 id="sftp-access-enhancement">SFTP Access Enhancement:</h4>
+<p>You can now access SFTP through an SSH key for third-party imports. In addition to password-based authentication, this update introduces authentication using a private SSH key.</p>
+
+<h4 id="streamlined-column-copying-alpha-feature">Streamlined Column Copying (Alpha Feature):</h4>
+<p>Copying multiple columns is now more efficient. Instead of creating a separate rule per column, users can use a single copy rule for multiple columns. This functionality is accessible through the transform menu and enhances workflow efficiency.</p>
+
+<h3 id="defect-fixes">Defect Fixes:</h3>
+<ul>
+  <li>Resolved an inconsistency in Branch out rule when deleting the resultant dataset.</li>
+  <li>Fixed an issue where pipeline changes were not being reflected in the data flow status modal.</li>
+  <li>Resolved the “Publish to DB” error that occurred.</li>
+  <li>Fixed the continuous loader problem during the application of copy column rule through pasting.</li>
+  <li>Third-Party Connector: Resolved the Salesforce error that was occurring when attempting to create a dataset.</li>
+  <li>Resolved an issue where performing consecutive actions like adding, deleting, or suspending batches did not maintain the correct row count in all views</li>
+  <li>Fixed the third-party OAuth connector identity creation redirection issue.</li>
+  <li>Resolved the problem of copy-pasting tasks not functioning correctly for certain tasks, which was causing a loader to appear.</li>
+  <li>Corrected the task card’s display of incorrect row count for Window function tasks when “Limit ranking” was selected.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements:]]></summary></entry><entry><title type="html">Release 2023.30</title><link href="http://localhost:4000/2023-07-26-release.html" rel="alternate" type="text/html" title="Release 2023.30" /><published>2023-07-26T00:00:00+05:30</published><updated>2023-07-26T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-07-26-release.html"><![CDATA[<h3 id="enhancements">Enhancements:</h3>
 <h4 id="password-protected-xlsx-file-support">Password Protected XLSX File Support:</h4>
 <p>Users can now open password-protected XLSX files directly from file uploads or through SFTP connections. This enhancement enables secure handling of sensitive data.</p>
 
@@ -20,24 +39,7 @@
   <li>Fixed the error where applying a filter on an explore card was not showing the result, and the loader was seen on the row count summary.</li>
   <li>Fixed the browser crash occurring due to datagrid refreshes when applying a template containing 125 tasks on a dataset containing 55 columns.</li>
   <li>Resolved the data sync issue by now deleting the dependencies when an action is suspended.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements: Password Protected XLSX File Support: Users can now open password-protected XLSX files directly from file uploads or through SFTP connections. This enhancement enables secure handling of sensitive data.]]></summary></entry><entry><title type="html">Release 2023.26</title><link href="http://localhost:4000/2023-06-27-release.html" rel="alternate" type="text/html" title="Release 2023.26" /><published>2023-06-27T00:00:00+05:30</published><updated>2023-06-27T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-27-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>Resolved the issue where the “Move to” UI in the Folder feature had additional space.</li>
-  <li>Fixed an issue where not all assets of a workspace were transferred to the target user.</li>
-  <li>Resolved the issue of element overflowing the viewport on &lt;Data Library?&gt;.</li>
-  <li>Fixed the issue where downloading as CSV would result in downloading the CSV file twice.</li>
-  <li>Resolved the issue where reset on the foreign view in the Join rule did not update the dependent data sources.</li>
-  <li>Fixed the issue where Branch out did not exit the error state when columns were reordered and all columns were correctly mapped.</li>
-  <li>Resolved the issue where the Pipeline remained in an error state even after fixing the rule.</li>
-  <li>Fixed the issue where creating a data source in combine mode and a unique sequence column failed for Snowflake integration.</li>
-  <li>Resolved the issue where email notifications were not sent when branch out or join operations encountered errors.</li>
-  <li>Fixed the issue where the Duplicate entry modal in the Join rule displayed overlapping text when the key column had duplicate values and they were long strings.</li>
-  <li>Resolved the issue where incorrect data was displayed in the Third-party connector modal when quickly changing the table name.</li>
-  <li>Resolved the issue where applying a template or adding a group aggregate rule would result in an empty grid.</li>
-  <li>Fixed the issue where the “Download as CSV” feature did not export only the filtered data when explore card filters were applied.</li>
-  <li>Fixed the issue in “Date difference” rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.27</title><link href="http://localhost:4000/2023-06-27-release.html" rel="alternate" type="text/html" title="Release 2023.27" /><published>2023-06-27T00:00:00+05:30</published><updated>2023-06-27T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-27-release.html"><![CDATA[<h3 id="enhancements">Enhancements:</h3>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements: Password Protected XLSX File Support: Users can now open password-protected XLSX files directly from file uploads or through SFTP connections. This enhancement enables secure handling of sensitive data.]]></summary></entry><entry><title type="html">Release 2023.27</title><link href="http://localhost:4000/2023-07-06-release.html" rel="alternate" type="text/html" title="Release 2023.27" /><published>2023-07-06T00:00:00+05:30</published><updated>2023-07-06T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-07-06-release.html"><![CDATA[<h3 id="enhancements">Enhancements:</h3>
 <h4 id="data-sync-controls">Data Sync Controls:</h4>
 <p>Data Sync now provides enhanced capabilities for managing data connections and controlling the flow of data between different components. With these improvements, you can:</p>
 <h6 id="apreview-panel">a)Preview Panel:</h6>
@@ -84,7 +86,24 @@
   <li>Fixed the problem causing significant delay and page hang when opening the branchout function panel with a large number of columns.</li>
   <li>Third Party Modal : Addressed the issue causing the query box to fluctuate inconsistently during the “Retrieve Latest Data” operation.</li>
   <li>Improved overall performance for larger pipelines, resulting in better performance even with larger datasets.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements: Data Sync Controls: Data Sync now provides enhanced capabilities for managing data connections and controlling the flow of data between different components. With these improvements, you can: a)Preview Panel: Gain access to data sync controls. Access a wider range of dataset properties and view information. Access view controls directly from preview panel.]]></summary></entry><entry><title type="html">Release 2023.24</title><link href="http://localhost:4000/2023-06-14-release.html" rel="alternate" type="text/html" title="Release 2023.24" /><published>2023-06-14T00:00:00+05:30</published><updated>2023-06-14T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-14-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements: Data Sync Controls: Data Sync now provides enhanced capabilities for managing data connections and controlling the flow of data between different components. With these improvements, you can: a)Preview Panel: Gain access to data sync controls. Access a wider range of dataset properties and view information. Access view controls directly from preview panel.]]></summary></entry><entry><title type="html">Release 2023.26</title><link href="http://localhost:4000/2023-06-27-release.html" rel="alternate" type="text/html" title="Release 2023.26" /><published>2023-06-27T00:00:00+05:30</published><updated>2023-06-27T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-27-release.html"><![CDATA[<h3 id="defect-fixes">Defect fixes</h3>
+
+<ul>
+  <li>Resolved the issue where the “Move to” UI in the Folder feature had additional space.</li>
+  <li>Fixed an issue where not all assets of a workspace were transferred to the target user.</li>
+  <li>Resolved the issue of element overflowing the viewport on &lt;Data Library?&gt;.</li>
+  <li>Fixed the issue where downloading as CSV would result in downloading the CSV file twice.</li>
+  <li>Resolved the issue where reset on the foreign view in the Join rule did not update the dependent data sources.</li>
+  <li>Fixed the issue where Branch out did not exit the error state when columns were reordered and all columns were correctly mapped.</li>
+  <li>Resolved the issue where the Pipeline remained in an error state even after fixing the rule.</li>
+  <li>Fixed the issue where creating a data source in combine mode and a unique sequence column failed for Snowflake integration.</li>
+  <li>Resolved the issue where email notifications were not sent when branch out or join operations encountered errors.</li>
+  <li>Fixed the issue where the Duplicate entry modal in the Join rule displayed overlapping text when the key column had duplicate values and they were long strings.</li>
+  <li>Resolved the issue where incorrect data was displayed in the Third-party connector modal when quickly changing the table name.</li>
+  <li>Resolved the issue where applying a template or adding a group aggregate rule would result in an empty grid.</li>
+  <li>Fixed the issue where the “Download as CSV” feature did not export only the filtered data when explore card filters were applied.</li>
+  <li>Fixed the issue in “Date difference” rule to ensure that the result of the date difference is always a positive integer when the start date is earlier than the end date.</li>
+</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Defect fixes]]></summary></entry><entry><title type="html">Release 2023.24</title><link href="http://localhost:4000/2023-06-14-release.html" rel="alternate" type="text/html" title="Release 2023.24" /><published>2023-06-14T00:00:00+05:30</published><updated>2023-06-14T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-06-14-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
 
 <h3 id="action-bar-and-data-grid-redesign">Action Bar and Data Grid Redesign</h3>
 
@@ -190,23 +209,4 @@
   <li>Fixed an issue in the dropdown for the Unique sequence column in the Connectors modal where the names of the column in the list were missing column type suffixes.</li>
   <li>Resolved a problem where SFTP took too long to list files.</li>
   <li>Addresses an issue in the Edit Query Modal that prevented it from opening or displaying older datasets without continuous loading.</li>
-</ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry><entry><title type="html">Release 2023.09</title><link href="http://localhost:4000/2023-03-01-release.html" rel="alternate" type="text/html" title="Release 2023.09" /><published>2023-03-01T00:00:00+05:30</published><updated>2023-03-01T00:00:00+05:30</updated><id>http://localhost:4000/release</id><content type="html" xml:base="http://localhost:4000/2023-03-01-release.html"><![CDATA[<h3 id="enhancements">Enhancements</h3>
-
-<h4 id="mammoth-now-warns-if-there-are-duplicate-values-in-the-joined-key-column-in-the-join-rule">Mammoth now warns if there are duplicate values in the joined key column in the Join rule</h4>
-<p>Mammoth now warns if there are non-unique values in the key column of the joined View. This is useful when the raw data or blended data is expected to have unique values but due to some flaws in the process, there are duplicated keys resulting in erroneous end results. This warning would help catch such issues early.</p>
-
-<h4 id="back-button-for-data-addition-modals">Back Button for Data Addition Modals</h4>
-<p>Data addition modals now have a back button that redirects to the main menu.</p>
-
-<h3 id="defect-fixes">Defect fixes</h3>
-
-<ul>
-  <li>Addressed the issue where pipeline rules were being modified unexpectedly when changing the foreign view in join.</li>
-  <li>Resolved the issue where window function sort was becoming undefined upon duplicating the view.</li>
-  <li>Fixed the issue of column names not being generated correctly when changing data settings for CSV files in the file processor.</li>
-  <li>Resolved the issue where Apply template was not working on views.</li>
-  <li>Connectors Modal: Fixed the issue of Text type columns being listed in the unique sequence column dropdown.</li>
-  <li>Connectors Modal: Schedule option was erroneously showing up for connectors where this is not applicable. This has been fixed.</li>
-  <li>Fixed the issue where user with no account would see a loader after sign in.</li>
-  <li>When a Branch Out Task is suspended or deleted, Mammoth deletes the contributed batch in the branched-out Dataset. This is also the behaviour now when a View containing such a Branch Out task is deleted or reset.</li>
 </ul>]]></content><author><name>Priya</name></author><category term="Jekyll" /><summary type="html"><![CDATA[Enhancements]]></summary></entry></feed>
