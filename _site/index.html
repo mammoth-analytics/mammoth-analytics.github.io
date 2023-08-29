@@ -403,6 +403,17 @@
                             
                         </li>
                     
+                        
+                        <li class="chapter" data-level="1.1" data-path="/2023-08-29-release.html">
+                        
+                            <a href="/2023-08-29-release.html">
+                                Release 2023.35
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
 
                     
                         <!-- <li class="divider"></li> -->
@@ -457,28 +468,21 @@ p, h1 {
         <h1 class="entry-title">
             
             
-                Release 2023.32
+                Release 2023.35
             
             </h1>
             <div class="entry-content"><h3 id="enhancements">Enhancements:</h3>
 
-<h4 id="sftp-access-enhancement">SFTP Access Enhancement:</h4>
-<p>You can now access SFTP through an SSH key for third-party imports. In addition to password-based authentication, this update introduces authentication using a private SSH key.</p>
-
-<h4 id="streamlined-column-copying-alpha-feature">Streamlined Column Copying (Alpha Feature):</h4>
-<p>Copying multiple columns is now more efficient. Instead of creating a separate rule per column, users can use a single copy rule for multiple columns. This functionality is accessible through the transform menu and enhances workflow efficiency.</p>
+<h4 id="personalized-explore-cards">Personalized Explore Cards:</h4>
+<p>Enhancing user personalization, Mammoth now ensures that each user enjoys their unique set of Explore Cards. Unlike before, where all users shared the same cards through the Dataview, this update provides a more customized experience</p>
 
 <h3 id="defect-fixes">Defect Fixes:</h3>
 <ul>
-  <li>Resolved an inconsistency in Branch out rule when deleting the resultant dataset.</li>
-  <li>Fixed an issue where pipeline changes were not being reflected in the data flow status modal.</li>
-  <li>Resolved the “Publish to DB” error that occurred.</li>
-  <li>Fixed the continuous loader problem during the application of copy column rule through pasting.</li>
-  <li>Third-Party Connector: Resolved the Salesforce error that was occurring when attempting to create a dataset.</li>
-  <li>Resolved an issue where performing consecutive actions like adding, deleting, or suspending batches did not maintain the correct row count in all views</li>
-  <li>Fixed the third-party OAuth connector identity creation redirection issue.</li>
-  <li>Resolved the problem of copy-pasting tasks not functioning correctly for certain tasks, which was causing a loader to appear.</li>
-  <li>Corrected the task card’s display of incorrect row count for Window function tasks when “Limit ranking” was selected.</li>
+  <li>Resolved an issue where the active view was not visible on the Dataview page.</li>
+  <li>Fixed an issue where copying large number of columns using the “Copy Multiple Columns” rule took longer than usual.</li>
+  <li>Resolved an issue where continuous loader was displayed on the navigation bar upon view deletion from the View menu.</li>
+  <li>Fixed an issue where the “Apply Template” feature was not functioning correctly on views.</li>
+  <li>Data Flow Status modal - Resolved an issue where the “Pending Data Updates” section  failed to open when the destination data source contained null/undefined rows.</li>
 </ul>
 </div>
     </body>
@@ -619,7 +623,7 @@ MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2023-08-14 12:57:24 +0530"
+        "time": "2023-08-29 13:08:04 +0530"
     },
     "basePath": "",
     "book": {
