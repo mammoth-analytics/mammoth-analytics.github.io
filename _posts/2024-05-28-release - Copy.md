@@ -7,9 +7,8 @@ layout: post
 ---
 ### Enhancement:
 
-* **Default Naming Improvements:** Updated the default project name to “New project” and the default workspace name to “firstname’s Workspace” for a more polished user experience.
-* **Enhanced Sign-Up Process:** Introduced an organization field to the sign-up form, streamlining account setup for professional users.
-* **Cleaner Workspace Names:** Eliminated word breaks in workspace names, ensuring a seamless and professional display.
+* Default Naming Improvements: Updated the default project name to “New project” and the default workspace name to “firstname’s Workspace”
+* Sign-Up Process changes: Introduced an organization field to the sign-up form
 
 ### Defect Fixes:
 
@@ -17,3 +16,4 @@ layout: post
 * Fixed an issue where workspace admins were unable to change the roles of fellow workspace members.
 * Fixed an issue where the incorrect DS count was shown on the settings page.
 * Addressed a problem where "Learn More" links were not directing users to the correct documentation pages.
+* Introduced word breaks in the workspace names on sidebar.
